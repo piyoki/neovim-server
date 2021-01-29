@@ -9,12 +9,12 @@
     <a href="https://github.com/wfxr/code-minimap/actions?query=workflow%3ACICD">
         <img src="https://github.com/wfxr/code-minimap/workflows/CICD/badge.svg" alt="CICD"/>
     </a>
-    <img src="https://img.shields.io/crates/l/code-minimap.svg" alt="License"/>
+    <img src="https://img.shields.io/github/license/yqlbu/neovim-server" alt="License"/>
     <a href="https://crates.io/crates/code-minimap">
         <img src="https://img.shields.io/crates/v/code-minimap.svg?colorB=319e8c" alt="Version">
     </a>
     <a href="https://github.com/wfxr/code-minimap/releases">
-        <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20Win%20|%20ARM-orange.svg" alt="Platform"/>
+        <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20ARM-orange.svg" alt="Platform"/>
     </a>
 </p>
 
