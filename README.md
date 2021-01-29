@@ -26,7 +26,7 @@ You can use it to implement an IDE-like web-based terminal text editor.
 - Versatile and customizable
 - Containerized
 - Run on a web browser
-- Build with multi-arch (ARM64/AMD64)
+- Build with multi-arch (arm64/amd64)
 
 ## Prerequisites
 
