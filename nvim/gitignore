@@ -1,0 +1,8 @@
+*.swp
+.DS_Store
+view/
+plugged/
+sessions/
+.netrwhist
+.vim-bookmarks
+autoload/

@@ -1,0 +1,48 @@
+---
+version: "3.8"
+services:
+  wetty:
+    image: hikariai/wetty:latest
+    build:
+      context: .
+      dockerfile: containers/wetty/Dockerfile
+    tty: true
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000"
+    #environment:
+    #TZ: "America/LosAngeles"
+    #PORT: "3000"
+    #UID: "998"
+    #GID: "998"
+    #USER: "guest"
+    #ADDUSER: "true"
+    #SECRET: "password"
+    #SHELL: "/bin/bash"
+    #HOME: "home/guest"
+    #SUDO: "false"
+    #SSL: "false"
+    #PKGS: "none"
+
+  neovim-server:
+    image: hikariai/neovim-server:latest
+    build:
+      context: .
+      dockerfile: containers/neovim-server/Dockerfile
+    tty: true
+    working_dir: /workspace
+    ports:
+      - "6080:3000"
+    environment:
+      TZ: "America/LosAngeles"
+      PORT: "3000"
+      UID: "998"
+      GID: "998"
+      USER: "guest"
+      ADDUSER: "true"
+      SECRET: "password"
+      SHELL: "/bin/bash"
+      HOME: "home/guest"
+      SUDO: "false"
+      SSL: "false"
+      PKGS: "none"

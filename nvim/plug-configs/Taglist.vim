@@ -1,0 +1,1 @@
+map <silent> ,, :TagbarOpenAutoClose<CR>
