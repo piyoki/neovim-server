@@ -96,7 +96,7 @@ Coming soon, please stay tuned!
 ## TODO
 
 - Prepare the Wiki
-- Add more customizable feature
+- Add more customizable features
 - Add more advanced usage cases
 
 ## Reference
