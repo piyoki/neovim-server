@@ -1,4 +1,4 @@
-<h1 align="center">🛰  Neovim  Server</h1>
+<h1 align="center"> ☁️ Neovim  Server</h1>
 <p align="center">
     <em>A containerized IDE-like text editor that runs on a web server</em>
 </p>
