@@ -74,6 +74,8 @@ docker-compose build nvim-server
 
 #### UNRAID user only
 
+Coming soon, please stay tuned!
+
 ## 💡 Usage
 
 After logging in with `username` and `password` in the web console, type `vim` to finish the initial setup.
