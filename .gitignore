@@ -1,0 +1,5 @@
+*.swp
+.DS_Store
+nvim/autoload
+.vim-bookmarks
+nvim/install.sh
