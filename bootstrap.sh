@@ -61,7 +61,7 @@ if [ "$CONTAINER" != "wetty" ] ; then
   echo "export LANG=en_US.UTF-8" >> $HOME/.bashrc
   echo "export EDITOR=nvim" >> $HOME/.bashrc
   echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
-  mkdir -p /usr/src/app/workspace && ln -s /usr/src/app/workspace $HOME/
+  mkdir -p /workspace && ln -s /workspace $HOME/
   mkdir -p $HOME/.config && cp -r /usr/src/app/nvim $HOME/.config/
   cp -r /usr/src/app/nvim/ranger $HOME/.config
 
@@ -70,6 +70,7 @@ if [ "$CONTAINER" != "wetty" ] ; then
 fi
 
 chown -R ${USER}:sudo ${HOME}
+chown -R ${USER}:sudo /workspace
 
 echo -e "==> [Step 4] Starting container .."
 if [ "$@" = "wetty" ]; then

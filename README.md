@@ -55,6 +55,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 docker run -d \
   --name nvim-server \
   -p 6080:3000 \
+  -v ~/workspace:/workspace \
   -e TZ=Asia/Shanghai \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
