@@ -24,7 +24,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build docker image
         run: |
-          docker build ./containers/nvim-server -t hikariai/nvim-server:1.0.0
+          docker-compose build neovim-server
+          docker tag hikariai/nvim-server:v1.0.0 hikariai/nvim-server:latest
           
       # Login to Docker Hub
       - name: Login to Docker Hub
@@ -32,9 +33,10 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_SECRET: ${{ secrets.DOCKER_SECRET }}
         run: |
-          docker login -U $DOCKER_USER -p $DOCKER_SECRET
+          docker login -u $DOCKER_USER -p $DOCKER_SECRET
       
       # Push the image to Docker Hub
       - name: Push image
         run: |
-          docker push hikariai/nvim-server:1.0.0
+          docker push hikariai/nvim-server:v1.0.0
+          docker push hikariai/nvim-server:latest
