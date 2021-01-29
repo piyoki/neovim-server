@@ -21,7 +21,7 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ### ✨ Features
 
-- Portable and light weight
+- Portable and light-weight
 - Easy to deploy
 - Versatile and customizable
 - Containerized
