@@ -32,7 +32,7 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_SECRET: ${{ secrets.DOCKER_SECRET }}
         run: |
-          docker login -U $DOCKER_USER -p $DOCKER_SECRET
+          docker login -u $DOCKER_USER -p $DOCKER_SECRET
       
       # Push the image to Docker Hub
       - name: Push image
