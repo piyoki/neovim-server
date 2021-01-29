@@ -48,6 +48,8 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 ## 📥Installation
 
+##### Run with the pre-built image
+
 ```bash
 docker run -d \
   --name nvim-server \
@@ -58,10 +60,24 @@ docker run -d \
   hikariai/nvim-server:latest
 ```
 
-visit `http://localhost:6080/wetty`
+Wait for a couple seconds until the container finishes its bootstrap process, then visit `http://localhost:6080/wetty`
 
-### 💡 Usage
+You may check the log by running `docker logs nvim-server`
 
-### 📋 Wiki
+##### Build the image manually
 
-### 💬 F.A.Q
+- required docker-compose
+
+```bash
+docker-compose build nvim-server
+```
+
+## 💡 Usage
+
+After logging in with `username` and `password` in the web console, type `vim` to finish the initial setup.
+
+For the first time launch, Neovim will install the coc-extensions defined in [coc.settings](https://github.com/yqlbu/neovim-server/blob/master/nvim/coc-settings.json). You may also download additional coc-extensions followed by the [instructions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
+
+## 📋 Wiki
+
+## 💬 F.A.Q
