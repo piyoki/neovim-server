@@ -12,7 +12,7 @@ services:
       - "3000:3000"
 
   neovim-server:
-    image: hikariai/nvim-server:latest
+    image: hikariai/nvim-server:v1.0.0
     build:
       context: .
       dockerfile: containers/nvim-server/Dockerfile
