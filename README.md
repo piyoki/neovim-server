@@ -7,9 +7,9 @@
     <a href="https://github.com/wfxr/code-minimap/actions?query=workflow%3ACICD">
         <img src="https://github.com/wfxr/code-minimap/workflows/CICD/badge.svg" alt="CICD"/>
     </a>
-    <img src="https://img.shields.io/github/license/yqlbu/neovim-server?style=flat-square" alt="License"/>
+    <img src="https://img.shields.io/github/license/yqlbu/neovim-server" alt="License"/>
     <a href="https://crates.io/crates/code-minimap">
-        <img src="https://img.shields.io/badge/docker-19.03-blue?colorB=319e8c" alt="Version">
+        <img src="https://img.shields.io/badge/docker-19.03-blue" alt="Version">
     </a>
     <a href="https://github.com/wfxr/code-minimap/releases">
         <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20ARM-orange.svg" alt="Platform"/>
