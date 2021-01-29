@@ -1,5 +1,7 @@
 # neovim-server
 
+## Usage
+
 ```bash
 docker run -d \
   --name nvim-server \
@@ -9,6 +11,10 @@ docker run -d \
   -e SECRET=<PASSWORD> \
   hikariai/nvim-server:latest
 ```
+
+visit `http://localhost:6080/wetty`
+
+## Install Nerd-Font
 
 ##### Linux
 
