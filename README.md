@@ -102,3 +102,7 @@ Coming soon, please stay tuned!
 - [wetty repository](https://github.com/butlerx/wetty)
 - [neovim repository](https://github.com/neovim/neovim)
 - [coc-nvim repository](https://github.com/neoclide/coc.nvim)
+
+## License
+
+[MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
