@@ -96,6 +96,7 @@ Coming soon, please stay tuned!
 
 - Prepare the Wiki
 - Add more customizable feature
+- Add more advanced usage cases
 
 ## Reference
 
