@@ -37,4 +37,4 @@ jobs:
       # Push the image to Docker Hub
       - name: Push image
         run: |
-          docker push hikariai/nvim-server:1.0.0
+          docker push hikariai/nvim-server:v1.0.0
