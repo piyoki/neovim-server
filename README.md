@@ -1,4 +1,4 @@
-<h1 align="center"> ☁️ Neovim  Server</h1>
+<h1 align="center"> ☁️ NeoVim  Server</h1>
 <p align="center">
     <em>A containerized IDE-like text editor that runs on a web server</em>
 </p>
@@ -16,7 +16,7 @@
     </a>
 </p>
 
-This tool is for running Neovim remotely, and continuing the developing process at 🚀 speed.
+This tool is for running NeoVim remotely, and continuing the developing process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
 ## ✨ Features
@@ -78,7 +78,7 @@ docker-compose build nvim-server
 
 After logging in with `username` and `password` in the web console, type `vim` to finish the initial setup.
 
-For the first launch, Neovim will install the coc-extensions defined in [coc.settings](https://github.com/yqlbu/neovim-server/blob/master/nvim/coc-settings.json). You may also download additional coc-extensions followed by the [instructions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
+For the first launch, NeoVim will install the coc-extensions defined in [coc.settings](https://github.com/yqlbu/neovim-server/blob/master/nvim/coc-settings.json). You may also download additional coc-extensions followed by the [instructions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 
 ## 📋 Wiki
 
