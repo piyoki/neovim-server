@@ -72,7 +72,7 @@ Notes: `docker-compose` is required
 docker-compose build nvim-server
 ```
 
-#### UNRAID user only
+#### UNRAID User ONLY
 
 Coming soon, please stay tuned!
 
