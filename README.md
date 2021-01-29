@@ -1,4 +1,4 @@
-<h1 align="center">🛰 nvim-server</h1>
+<h1 align="center">🛰  Neovim  Server</h1>
 <p align="center">
     <em>A containerized IDE-like text editor that runs on a web server</em>
 </p>
@@ -16,10 +16,10 @@
     </a>
 </p>
 
-This tool is for running neovim remotely, and continuing the developing process at 🚀 speed.
+This tool is for running Neovim remotely, and continuing the developing process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
-### Features
+### ✨ Features
 
 - Portable and light weight
 - Easy to deploy
@@ -30,20 +30,6 @@ You can use it to implement an IDE-like web-based terminal text editor.
 ## Prerequisites
 
 - Driod Sans Mono Nerd Font is the default font of the container. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
-
-## Usage
-
-```bash
-docker run -d \
-  --name nvim-server \
-  -p 6080:3000 \
-  -e TZ=Asia/Shanghai \
-  -e USER=<USER> \
-  -e SECRET=<PASSWORD> \
-  hikariai/nvim-server:latest
-```
-
-visit `http://localhost:6080/wetty`
 
 ## Font Installation
 
@@ -59,3 +45,19 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 ```bash
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
+
+## 📥 Usage
+
+```bash
+docker run -d \
+  --name nvim-server \
+  -p 6080:3000 \
+  -e TZ=Asia/Shanghai \
+  -e USER=<USER> \
+  -e SECRET=<PASSWORD> \
+  hikariai/nvim-server:latest
+```
+
+visit `http://localhost:6080/wetty`
+
+### 💬 F.A.Q
