@@ -72,6 +72,8 @@ You may check the log by running `docker logs nvim-server`
 docker-compose build nvim-server
 ```
 
+#### UNRAID user only
+
 ## 💡 Usage
 
 After logging in with `username` and `password` in the web console, type `vim` to finish the initial setup.
