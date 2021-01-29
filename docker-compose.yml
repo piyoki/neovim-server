@@ -10,25 +10,12 @@ services:
     working_dir: /usr/src/app
     ports:
       - "3000:3000"
-    #environment:
-    #TZ: "America/LosAngeles"
-    #PORT: "3000"
-    #UID: "998"
-    #GID: "998"
-    #USER: "guest"
-    #ADDUSER: "true"
-    #SECRET: "password"
-    #SHELL: "/bin/bash"
-    #HOME: "home/guest"
-    #SUDO: "false"
-    #SSL: "false"
-    #PKGS: "none"
 
   neovim-server:
-    image: hikariai/neovim-server:latest
+    image: hikariai/nvim-server:latest
     build:
       context: .
-      dockerfile: containers/neovim-server/Dockerfile
+      dockerfile: containers/nvim-server/Dockerfile
     tty: true
     working_dir: /workspace
     ports:

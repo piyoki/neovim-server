@@ -25,8 +25,8 @@ if [ "${ADDUSER}" == "true" ]; then
 	if [ "${SUDO}" == "true" ]; then
 		sudo="-G sudo"
 	fi
-  if [ -z "$(getent group ${USER_GROUP})" ]; then
-		/usr/sbin/groupadd -g ${GID} ${USER_GROUP}
+  if [ -z "$(getent group ${USER})" ]; then
+		/usr/sbin/groupadd -g ${GID} ${USER}
   fi
 
 	if [ -z "$(getent passwd ${USER})" ]; then
