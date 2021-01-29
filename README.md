@@ -19,7 +19,7 @@
 This tool is for running Neovim remotely, and continuing the developing process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
-### ✨ Features
+## ✨ Features
 
 - Portable and light-weight
 - Easy to deploy
