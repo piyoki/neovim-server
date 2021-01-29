@@ -29,7 +29,7 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ## Prerequisites
 
-- Driod Sans Mono Nerd Font is the default font of the container. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
+- Driod Sans Mono Nerd Font is required to be downloaded since its the default font of the container. You may find the installation guide below. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
 
 ## Font Installation
 
