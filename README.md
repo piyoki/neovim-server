@@ -86,7 +86,11 @@ For the first launch, NeoVim will install the coc-extensions defined in [coc.set
 
 ## 📋 Wiki
 
+Coming soon, please stay tuned!
+
 ## 💬F.A.Q
+
+Coming soon, please stay tuned!
 
 ## TODO
 
