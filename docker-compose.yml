@@ -20,16 +20,3 @@ services:
     working_dir: /workspace
     ports:
       - "6080:3000"
-    environment:
-      TZ: "America/LosAngeles"
-      PORT: "3000"
-      UID: "998"
-      GID: "998"
-      USER: "guest"
-      ADDUSER: "true"
-      SECRET: "password"
-      SHELL: "/bin/bash"
-      HOME: "home/guest"
-      SUDO: "false"
-      SSL: "false"
-      PKGS: "none"
