@@ -14,7 +14,7 @@ docker run -d \
 
 visit `http://localhost:6080/wetty`
 
-## Install Nerd-Font
+## Font Installation
 
 ##### Linux
 
