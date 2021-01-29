@@ -1,5 +1,3 @@
-# Neovim Server
-
 <h1 align="center">🛰 nvim-server</h1>
 <p align="center">
     <em>A containerized IDE-like text editor that runs on a web server</em>
