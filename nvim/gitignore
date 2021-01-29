@@ -6,3 +6,4 @@ sessions/
 .netrwhist
 .vim-bookmarks
 autoload/
+install.sh
