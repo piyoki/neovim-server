@@ -25,6 +25,7 @@ jobs:
       - name: Build docker image
         run: |
           docker-compose build neovim-server
+          docker tag hikariai/nvim-server:v1.0.0 hikariai/nvim-server:latest
           
       # Login to Docker Hub
       - name: Login to Docker Hub
@@ -38,3 +39,4 @@ jobs:
       - name: Push image
         run: |
           docker push hikariai/nvim-server:v1.0.0
+          docker push hikariai/nvim-server:latest
