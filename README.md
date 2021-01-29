@@ -66,7 +66,7 @@ You may check the log by running `docker logs nvim-server`
 
 #### Build the image manually
 
-`docker-compose` is required
+Notes: `docker-compose` is required
 
 ```bash
 docker-compose build nvim-server
