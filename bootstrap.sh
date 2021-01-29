@@ -8,9 +8,10 @@ hex()
 }
 
 echo -e "==> [Step 1] Bootstraping container .."
-COMMAND="yarn start"
 
+COMMAND="yarn start"
 HOME=/home/$USER
+
 if [ "$PKGS" != "none" ]; then
 	set +e
 	/usr/bin/apt-get update
