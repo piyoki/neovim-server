@@ -7,7 +7,7 @@ docker run -d \
   -e TZ=Asia/Shanghai \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
-  hikariai/neovim-server:latest
+  hikariai/nvim-server:latest
 ```
 
 ##### Linux
