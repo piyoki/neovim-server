@@ -80,4 +80,15 @@ For the first launch, Neovim will install the coc-extensions defined in [coc.set
 
 ## 📋 Wiki
 
-## 💬 F.A.Q
+## 💬F.A.Q
+
+## TODO
+
+- Prepare the Wiki
+- Add more customizable feature
+
+## Reference
+
+- [wetty repository](https://github.com/butlerx/wetty)
+- [neovim repository](https://github.com/neovim/neovim)
+- [coc-nvim repository](https://github.com/neoclide/coc.nvim)
