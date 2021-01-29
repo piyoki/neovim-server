@@ -24,4 +24,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build docker image
         run: |
-          docker build ./container/nvim-server:1.0.0
+          docker build ./container/nvim-server -t hikariai/nvim-server:1.0.0
