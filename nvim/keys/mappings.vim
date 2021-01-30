@@ -1,6 +1,5 @@
 " Basic Key Mappings
 
-
 " Leader Key
 let mapleader = " "
 
@@ -104,7 +103,7 @@ noremap <LEADER>sw :set wrap<CR>
 " ===========================
 
 " === Ranger
-nmap ff :RnvimrToggle<CR>
+" nmap ff :RnvimrToggle<CR>
 nmap <LEADER>r :RnvimrToggle<CR>
 
 " === NERD Tree
@@ -126,3 +125,12 @@ tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
 
 " === Minimap
 nnoremap <silent> <LEADER>m :MinimapToggle<CR>
+
+" === FZF
+" nnoremap ff :Files<CR>
+" nnoremap fs :Lines<CR>
+
+" === LeaderF
+noremap ff :Leaderf file<CR>
+noremap fs :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
+noremap fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
