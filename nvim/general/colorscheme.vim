@@ -23,5 +23,5 @@ hi PmenuSel ctermbg=235 ctermfg=121
 
 " Minimap colorscheme
 let g:minimap_highlight = 'MinimapCurrentLine'
-hi MinimapCurrentLine ctermfg=48 guifg=#50FA7B guibg=#87ff00 ctermbg=235
+hi MinimapCurrentLine ctermfg=48 guifg=#50FA7B guibg=#262626 ctermbg=235
 
