@@ -51,4 +51,4 @@ jobs:
           push: true
           tags: |
             hikariai/nvim-server:latest
-            hikariai/nvim-server::1.0.0
+            hikariai/nvim-server:1.0.0
