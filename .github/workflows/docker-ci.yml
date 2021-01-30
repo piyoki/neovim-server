@@ -45,6 +45,7 @@ jobs:
         uses: docker/build-push-action@v2
         env:
           IMAGE: "nvim-server"
+          REGISTRY: ${{ DOCKER_USER }}
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
@@ -52,8 +53,8 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le
           push: true
           tags: |
-            {{ DOCKER_USER }}/${IMAGE}:latest
-            {{ DOCKER_USER }}/${IMAGE}:1.0.0
+            ${REGISTRY}/${IMAGE}:latest
+            ${REGISTRY}/${IMAGE}:1.0.0
 
       # Build and Push the images
 #       - name: Build docker image
