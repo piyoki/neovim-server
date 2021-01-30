@@ -19,7 +19,7 @@
 This tool is for running NeoVim remotely, and continuing the develop process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
-[]!(https://media.giphy.com/media/gK9LfvTWfRvNq88ixA/giphy.gif)
+![](https://media.giphy.com/media/gK9LfvTWfRvNq88ixA/giphy.gif)
 
 ## ✨ Features
 
