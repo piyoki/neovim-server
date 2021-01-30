@@ -5,7 +5,7 @@
 
 <p align="center">
     <a href="https://github.com/yqlbu/neovim-server/actions?query=workflow%3ACICD">
-        <img src="https://github.com/yqlbu/neovim-server/.github/workflows/docker-ci.yml/badge.svg" alt="CICD"/>
+        <img src="https://github.comyqlbu/neovim-server/workflows/Docker+CI+Builds/badge.svg" alt="CICD"/>
     </a>
     <img src="https://img.shields.io/github/license/yqlbu/neovim-server" alt="License"/>
     <a href="https://crates.io/crates/code-minimap">
