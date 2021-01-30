@@ -37,6 +37,8 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ## Font Installation
 
+Notes: `reboot` might be needed after the font installation
+
 #### Linux
 
 ```bash
