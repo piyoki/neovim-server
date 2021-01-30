@@ -25,9 +25,9 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=${{ secrets.DOCKER_USER }}/nvim-server
-          VERSION=latest
-          SHORTREF=${GITHUB_SHA::8}
+          export DOCKER_IMAGE=${{ secrets.DOCKER_USER }}/nvim-server
+          export VERSION=latest
+          export SHORTREF=${GITHUB_SHA::8}
 
           # If this is git tag, use the tag name as a docker tag
           if [[ $GITHUB_REF == refs/tags/* ]]; then
