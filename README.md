@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/wfxr/code-minimap/actions?query=workflow%3ACICD">
-        <img src="https://github.com/wfxr/code-minimap/workflows/CICD/badge.svg" alt="CICD"/>
+    <a href="https://github.com/yqlbu/neovim-server/actions?query=workflow%3ACICD">
+        <img src="https://github.com/yqlbu/neovim-server/workflows/CICD/badge.svg" alt="CICD"/>
     </a>
     <img src="https://img.shields.io/github/license/yqlbu/neovim-server" alt="License"/>
     <a href="https://crates.io/crates/code-minimap">
