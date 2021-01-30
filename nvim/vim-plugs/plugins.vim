@@ -34,16 +34,14 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kevinhwang91/rnvimr'
-Plug 'pechorin/any-jump.vim'
 
 " File Searching
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 " Taglist
-Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
+" Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
 
 " Float Term
 Plug 'voldikss/vim-floaterm'
@@ -100,8 +98,6 @@ Plug 'svermeulen/vim-subversive'
 Plug 'theniceboy/argtextobj.vim'
 Plug 'rhysd/clever-f.vim'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'theniceboy/pair-maker.vim'
-Plug 'theniceboy/vim-move'
 Plug 'Yggdroot/indentLine'
 Plug 'wfxr/minimap.vim'
 "Plug 'mj-hd/vim-picomap', { 'do': 'bash install.sh' }
