@@ -16,7 +16,7 @@
     </a>
 </p>
 
-This tool is for running NeoVim remotely, and continuing the develop process at 🚀 speed.
+This tool is for running NeoVim remotely and continuing the development process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
 ![screenshot](https://github.com/yqlbu/neovim-server/raw/master/demo.gif)
