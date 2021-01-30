@@ -53,5 +53,5 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le
           push: true
           tags: |
-            ${REGISTRY}/${IMAGE}:latest
-            ${REGISTRY}/${IMAGE}:1.0.0
+            $REGISTRY/$IMAGE:latest
+            $REGISTRY/$IMAGE:1.0.0
