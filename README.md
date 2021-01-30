@@ -12,7 +12,7 @@
         <img src="https://img.shields.io/badge/docker-19.03-blue" alt="Version">
     </a>
     <a href="https://github.com/wfxr/code-minimap/releases">
-        <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20ARM-orange.svg" alt="Platform"/>
+        <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20ARM-orange.svg"/>
     </a>
 </p>
 
