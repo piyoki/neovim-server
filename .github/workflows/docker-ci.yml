@@ -45,7 +45,7 @@ jobs:
         uses: docker/build-push-action@v2
         env:
           IMAGE: "nvim-server"
-          REGISTRY: ${{ DOCKER_USER }}
+          REGISTRY: "hikariai"
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
@@ -55,17 +55,3 @@ jobs:
           tags: |
             ${REGISTRY}/${IMAGE}:latest
             ${REGISTRY}/${IMAGE}:1.0.0
-
-      # Build and Push the images
-#       - name: Build docker image
-#         run: |
-#           docker-compose build neovim-server
-#           docker tag hikariai/nvim-server:v1.0.0 hikariai/nvim-server:latest
-          
-      
-      # Push the image to Docker Hub
-#       - name: Push image
-#         run: |
-#           docker tag hikariai/nvim-server:1.0.0 hikariai/nvim-server:latest
-#           docker push hikariai/nvim-server:1.0.0
-#           docker push hikariai/nvim-server:latest
