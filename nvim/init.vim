@@ -102,13 +102,13 @@ source $HOME/.config/nvim/plug-configs/startify.vim
 source $HOME/.config/nvim/keys/which-key.vim
 " === Minimap
 source $HOME/.config/nvim/plug-configs/minimap.vim
-" === FZF
-"default command :FZF
-"source $HOME/.config/nvim/plug-configs/fzf.vim
+" === NerdCommenter
+source $HOME/.config/nvim/plug-configs/NERD-Commenter.vim
+" === LeaderF
+source $HOME/.config/nvim/plug-configs/leaderF.vim
+
 " === UndoTree
 " default key mapping <S-l> or L
-" === Any Jump
-" default key mapping <LEADER>j
 
 " ========================
 " === General Settings ===
