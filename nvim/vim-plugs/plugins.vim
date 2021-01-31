@@ -78,12 +78,12 @@ Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-p
 Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
 
 " Markdown
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-Plug 'dkarter/bullets.vim'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}                                                   "  Instant Markdown Preview
+Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] } "  Markdown Table Enhancement
+Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }                       "  Generate Table of Content
+Plug 'tpope/vim-markdown'                                                                               "  Support other filename other than README.md
 
-" Bookmarks
+"Bookmarks
 Plug 'kshenoy/vim-signature'
 
 " Editor Enhancement

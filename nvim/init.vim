@@ -106,6 +106,10 @@ source $HOME/.config/nvim/plug-configs/minimap.vim
 source $HOME/.config/nvim/plug-configs/NERD-Commenter.vim
 " === LeaderF
 source $HOME/.config/nvim/plug-configs/leaderF.vim
+" === vim-instant-markdown
+source $HOME/.config/nvim/plug-configs/vim-instant-markdown.vim
+" === vim-markdown
+source $HOME/.config/nvim/plug-configs/vim-markdown.vim
 
 " === UndoTree
 " default key mapping <S-l> or L
