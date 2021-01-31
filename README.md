@@ -66,16 +66,30 @@ yay -S nerd-fonts-droid-sans-mono
 docker run -d \
   --name nvim-server \
   -p 6080:3000 \
+  -p 8090:8090 \
   -v ~/workspace:/workspace \
+  -v /appdata/neovim-server:/config \
   -e TZ=Asia/Shanghai \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
   hikariai/nvim-server:latest
 ```
 
-Wait for a couple seconds until the container finishes its bootstrap process, then visit `http://localhost:6080/wetty`
+Notes:
 
-You may check the log by running `docker logs nvim-server`
+- Wait for a couple seconds until the container finishes its bootstrap process, then visit `http://localhost:6080/wetty`
+- You may check the log by running `docker logs nvim-server`
+
+|   Flags    |              Usage              |
+| :--------: | :-----------------------------: |
+|    name    |     Name for the container      |
+|    6080    |             Web UI              |
+|    8090    | Instant Markdown Preview Server |
+| /workspace |        Working directory        |
+|  /config   |        Config directory         |
+|     TZ     |            Timezone             |
+|    USER    |       Username for login        |
+|   SECRET   |       Password for login        |
 
 #### Build the image manually
 
