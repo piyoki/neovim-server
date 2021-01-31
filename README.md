@@ -16,7 +16,7 @@
     </a>
 </p>
 
-This tool is for running NeoVim remotely, and continuing the develop process at 🚀 speed.
+This tool is for running NeoVim remotely and continuing the development process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
 ![screenshot](https://github.com/yqlbu/neovim-server/raw/master/demo.gif)
@@ -37,6 +37,8 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ## Font Installation
 
+Notes: `reboot` might be needed after the font installation
+
 #### Linux
 
 ```bash
@@ -48,6 +50,12 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 
 ```bash
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+```
+
+#### Arch User ONLY
+
+```bash
+yay -S nerd-fonts-droid-sans-mono
 ```
 
 ## 📥 Installation
