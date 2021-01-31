@@ -60,9 +60,9 @@ yay -S nerd-fonts-droid-sans-mono
 
 ## 📥 Installation
 
-### Run with the pre-built image
+#### Run with the pre-built image
 
-````bash
+```bash
 docker run -d \
   --name nvim-server \
   -p 6080:3000 \
@@ -73,6 +73,7 @@ docker run -d \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
   hikariai/nvim-server:latest
+```
 
 Notes:
 
@@ -90,15 +91,15 @@ Notes:
 |    USER    |       Username for login        |
 |   SECRET   |       Password for login        |
 
-### Build the image manually
+#### Build the image manually
 
 Notes: `docker-compose` is required
 
 ```bash
 docker-compose build nvim-server
-````
+```
 
-### UNRAID User ONLY
+#### UNRAID User ONLY
 
 Coming soon, please stay tuned!
 
@@ -131,3 +132,7 @@ Coming soon, please stay tuned!
 ## License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
+
+```
+
+```
