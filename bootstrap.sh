@@ -64,7 +64,7 @@ if [ "$CONTAINER" != "wetty" ] ; then
   mkdir -p /workspace && ln -s /workspace $HOME/
   mkdir -p $HOME/.config && cp -r /usr/src/app/nvim $HOME/.config/
   cp -r /usr/src/app/nvim/ranger $HOME/.config
-  ln -s /config $HOME
+  ln -s ./.config/* /config/
 
   echo -e "==> [Step 3] Setting up neovim .."
   nvim --headless +PlugInstall +qall > /dev/null 2>&1
@@ -72,6 +72,7 @@ fi
 
 chown -R ${USER}:sudo ${HOME}
 chown -R ${USER}:sudo /workspace
+chown -R ${USER}:sudo /config
 
 echo -e "==> [Step 4] Starting container .."
 if [ "$@" = "wetty" ]; then

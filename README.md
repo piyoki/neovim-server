@@ -68,7 +68,7 @@ docker run -d \
   -p 6080:3000 \
   -p 8090:8090 \
   -v ~/workspace:/workspace \
-  -v /appdata/neovim-server:/config \
+  -v /appdata/nvim-server:/config \
   -e TZ=Asia/Shanghai \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
