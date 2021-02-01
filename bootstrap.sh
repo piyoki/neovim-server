@@ -61,18 +61,18 @@ if [ "$CONTAINER" != "wetty" ] ; then
   echo "export LANG=en_US.UTF-8" >> $HOME/.bashrc
   echo "export EDITOR=nvim" >> $HOME/.bashrc
   echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
+  ln -sf /config $HOME/.config && cp -r /usr/src/app/nvim $HOME/.config/
   mkdir -p $HOME/.config && cp -r /usr/src/app/nvim $HOME/.config/
   cp -r /usr/src/app/nvim/ranger $HOME/.config
-  ln -s $HOME/.config -d /config
-  ln -s $HOME/workspace -d /workspace
+  ln -sf /workspace $HOME 
 
   echo -e "==> [Step 3] Setting up neovim .."
   nvim --headless +PlugInstall +qall > /dev/null 2>&1
 fi
 
 chown -R ${USER}:sudo ${HOME}
-chown -R ${USER}:sudo /workspace
 chown -R ${USER}:sudo /config
+chown -R ${USER}:sudo /workspace
 
 echo -e "==> [Step 4] Starting container .."
 if [ "$@" = "wetty" ]; then
