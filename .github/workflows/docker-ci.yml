@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Get current tag version and pass it as environment variable
-      - name: Get current tag version
+      - name: Set environment variable
         run: |
           echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
           echo "IMAGE=nvim-server" >> $GITHUB_ENV
