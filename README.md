@@ -96,11 +96,7 @@ Notes:
 
 #### Build the image manually
 
-Notes: `docker-compose` is required
-
-```bash
-docker-compose build nvim-server
-```
+Follow the instruction [HERE](https://github.com/yqlbu/neovim-server/wiki/Installation#build-container-image-manually)
 
 #### UNRAID User ONLY
 
