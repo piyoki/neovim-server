@@ -49,8 +49,8 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap <S-TAB> <gv
 vnoremap <TAB> >gv
 " Use <TAB> to indent or unindent in normal mode
-nnoremap <TAB> >>
-nnoremap <S-TAB> <<
+" nnoremap <TAB> >>
+" nnoremap <S-TAB> <<
 " Use TAB to indent and Shift-TAB to undent in insert mode
 inoremap <TAB> <C-t>
 inoremap <S-TAB> <C-d>
@@ -75,10 +75,10 @@ map <LEADER>k <C-w>k
 map <LEADER>l <C-w>l
 
 " Use <space> + arrow key to resize windows
-"map <LEADER><up> :res+5<CR>
-"map <LEADER><down> :res-5<CR>
-"map <LEADER><left> :vertical resize-5<CR>
-"map <LEADER><right> :vertical resize+5<CR>
+map <LEADER><up> :res+5<CR>
+map <LEADER><down> :res-5<CR>
+map <LEADER><left> :vertical resize-5<CR>
+map <LEADER><right> :vertical resize+5<CR>
 
 "Commenter
 autocmd VimEnter * noremap <LEADER>/ :call NERDComment(0,"toggle")<CR>
