@@ -135,3 +135,5 @@ Coming soon, please stay tuned!
 ## License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
+
+nihaoma
