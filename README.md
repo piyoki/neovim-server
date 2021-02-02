@@ -122,7 +122,7 @@ Coming soon, please stay tuned!
 
 ## TODO
 
-- Prepare the Wiki
+- Add a customizable base image
 - Add more customizable features
 - Add more advanced usage cases
 
