@@ -32,7 +32,7 @@ map sc :set spell!<CR>
 map fg :r !figlet
 
 " Folding
-noremap <C-o> za
+" noremap <C-o> za
 
 " Use <space> =- to change tab
 map tt :tabe<CR>
@@ -129,11 +129,11 @@ tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
 " === Minimap
 nnoremap <silent> <LEADER>m :MinimapToggle<CR>
 
-" === FZF
-" nnoremap ff :Files<CR>
-" nnoremap fs :Lines<CR>
-
 " === LeaderF
 noremap ff :Leaderf file<CR>
 noremap fs :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 noremap fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+
+" === FZF
+" nnoremap ff :Files<CR>
+" nnoremap fs :Lines<CR>
