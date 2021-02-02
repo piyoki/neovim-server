@@ -8,10 +8,13 @@
         <img src='https://github.com/yqlbu/neovim-server/workflows/Docker%20CI%20Builds/badge.svg' alt="CICD"/>
     </a>
     <img src="https://img.shields.io/github/license/yqlbu/neovim-server" alt="License"/>
-    <a href="https://crates.io/crates/code-minimap">
+    <a href="https://hub.docker.com/repository/docker/hikariai/nvim-server">
         <img src="https://img.shields.io/badge/docker-19.03-blue" alt="Version">
     </a>
-    <a href="https://github.com/wfxr/code-minimap/releases">
+    <a href="https://hub.docker.com/repository/docker/hikariai/nvim-servers">
+        <img src="https://img.shields.io/badge/0.5.0-red.svg" alt="NeoVim"/>
+    </a>
+    <a href="https://hub.docker.com/repository/docker/hikariai/nvim-servers">
         <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20ARM-red.svg" alt="Platform"/>
     </a>
 </p>
