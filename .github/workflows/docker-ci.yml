@@ -27,9 +27,10 @@ jobs:
       - name: Get current tag version
         run: |
           echo "BRANCH=${{ github.event.ref }}" >> $GITHUB_ENV
-          echo "IMAGE=hikariai/nvim-server" >> $GITHUB_ENV
-
+          echo "IMAGE=nvim-server" >> $GITHUB_ENV
+          echo "REGISTRY=hikariai" >> $GITHUB_ENV
           echo "LATEST=latest" >> $GITHUB_ENV
+
       # The docker/setup-qemu action installs QEMU static binaries, which are used to run builders for architectures other than the host.
       - name: Set up QEMU
         uses: docker/setup-qemu-action@master
@@ -59,5 +60,5 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le
           push: true
           tags: |
-            ${{ env.IMAGE }}:${{ env.LATEST }}
-            ${{ env.IMAGE }}:${{ env.BRANCH }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
+            ${{ env,REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
