@@ -26,7 +26,7 @@ jobs:
       # Get current tag version and pass it as environment variable
       - name: Get current tag version
         run: |
-          echo "BRANCH=${{ github.event.ref }}" >> $GITHUB_ENV
+          echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
           echo "IMAGE=nvim-server" >> $GITHUB_ENV
           echo "REGISTRY=hikariai" >> $GITHUB_ENV
           echo "LATEST=latest" >> $GITHUB_ENV
