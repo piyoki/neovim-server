@@ -35,7 +35,7 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ## Prerequisites
 
-- Driod Sans Mono Nerd Font is required to be downloaded since its the default font of the container. You may find the installation guide below. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
+- `Driod Sans Mono Nerd Font` is required to be downloaded since its the default font of the container. You may find the installation guide below. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
 - Choose a web browser in your preference. Google Chrome, Microsoft Edge, and FireFox should work fine, whereas Safari does not work temporarily.
 
 ## Font Installation
@@ -96,11 +96,7 @@ Notes:
 
 #### Build the image manually
 
-Notes: `docker-compose` is required
-
-```bash
-docker-compose build nvim-server
-```
+Follow the instruction [HERE](https://github.com/yqlbu/neovim-server/wiki/Installation#build-container-image-manually)
 
 #### UNRAID User ONLY
 
@@ -108,9 +104,13 @@ Coming soon, please stay tuned!
 
 ## 💡 Usage
 
-After logging in with `username` and `password` in the web console, type `vim` to finish the initial setup.
+* After logging in with `username` and `password` in the web console, type `vim` to finish the initial setup.
 
-For the first launch, NeoVim will install the coc-extensions defined in [coc.settings](https://github.com/yqlbu/neovim-server/blob/master/nvim/coc-settings.json). You may also download additional coc-extensions followed by the [instructions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
+* For the first launch, NeoVim will install the coc-extensions defined in [coc.settings](https://github.com/yqlbu/neovim-server/blob/master/nvim/coc-settings.json). You may also download additional coc-extensions followed by the [instructions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
+
+* All the functionalities and usage cases are written in the [Wiki Page](https://github.com/yqlbu/neovim-server/wiki), feel free to check it out.
+
+* To get familiar with the default key mappings, please visit the [Cheat Sheet Page](https://github.com/yqlbu/neovim-server/wiki/Cheat-sheet)
 
 ## 📋 Wiki
 
@@ -122,7 +122,7 @@ For the first launch, NeoVim will install the coc-extensions defined in [coc.set
 
 ## TODO
 
-- Prepare the Wiki
+- Add a customizable base image
 - Add more customizable features
 - Add more advanced usage cases
 
