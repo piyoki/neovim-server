@@ -45,9 +45,12 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-" Use > or < to indent or undent in visual line mode
-vnoremap < <gv
-vnoremap > >gv
+" Use > or < to indent or unindent in visual line mode
+vnoremap <S-TAB> <gv
+vnoremap <TAB> >gv
+" Use <TAB> to indent or unindent in normal mode
+nnoremap <TAB> >>
+nnoremap <S-TAB> <<
 
 " Insert mode binding
 inoremap jj <esc>:w<CR>
