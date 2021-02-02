@@ -8,8 +8,8 @@ autocmd VimEnter * nnoremap <silent> J 5j
 autocmd VimEnter * nnoremap <silent> K 5k
 autocmd VimEnter * nnoremap <silent> L w
 autocmd VimEnter * nnoremap <silent> H b
-nnoremap <C-l> $
-nnoremap <C-h> 0
+nnoremap <C-e> $
+nnoremap <C-a> 0
 vnoremap <C-e> $
 vnoremap <C-a> 0
 inoremap <C-e> <C-o>$
