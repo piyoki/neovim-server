@@ -12,10 +12,10 @@
         <img src="https://img.shields.io/badge/Docker-19.03-blue" alt="Version">
     </a>
     <a href="https://github.com/neovim/neovim">
-        <img src="https://img.shields.io/badge/NeoVim-0.5.0-violet.svg" alt="NeoVim"/>
+        <img src="https://img.shields.io/badge/neovim-0.5.0-violet.svg" alt="NeoVim"/>
     </a>
     <a href="https://hub.docker.com/repository/docker/hikariai/nvim-servers">
-        <img src="https://img.shields.io/badge/Platform-%20Linux%20|%20OSX%20|%20ARM-red.svg" alt="Platform"/>
+        <img src="https://img.shields.io/badge/platform-%20Linux%20|%20OSX%20|%20ARM-red.svg" alt="Platform"/>
     </a>
 </p>
 
