@@ -59,5 +59,3 @@ jobs:
           tags: |
             hikariai/nvim-server:latest
             hikariai/nvim-server:${{ env.BRANCH }}
-          build-args: |
-            BRANCH=${{ env.BRANCH }}
