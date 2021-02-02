@@ -54,7 +54,7 @@ fi
 	#set -e
 #fi
 
-if [ "$CONTAINER" != "wetty" ] ; then
+if [ "$CONTAINER" != "wetty" ]; then
   echo -e "==> [Step 2] Setting up environment .."
   echo "alias ..='cd ..'" >> $HOME/.bashrc && echo "alias ...='cd ../../'" >> /home/$USER/.bashrc
   echo "alias vim='nvim'" >> $HOME/.bashrc
