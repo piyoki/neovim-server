@@ -61,9 +61,11 @@ if [ "$CONTAINER" != "wetty" ] ; then
   echo "export LANG=en_US.UTF-8" >> $HOME/.bashrc
   echo "export EDITOR=nvim" >> $HOME/.bashrc
   echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
-  ln -sf /config $HOME/.config && cp -r /usr/src/app/nvim $HOME/.config/
-  mkdir -p $HOME/.config && cp -r /usr/src/app/nvim $HOME/.config/
-  cp -r /usr/src/app/nvim/ranger $HOME/.config
+  ln -sf /config $HOME/.config
+  if [[ ! -d "$HOME/.config/nvim" && ! -d "$HOME/.config/nvim" ]]; then
+    cp -r /usr/src/app/nvim $HOME/.config/
+    cp -r /usr/src/app/nvim/ranger $HOME/.config
+  fi
   ln -sf /workspace $HOME/workspace
 
   echo -e "==> [Step 3] Setting up neovim .."
