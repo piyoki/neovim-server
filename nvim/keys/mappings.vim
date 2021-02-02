@@ -51,12 +51,12 @@ vnoremap <TAB> >gv
 " Use <TAB> to indent or unindent in normal mode
 nnoremap <TAB> >>
 nnoremap <S-TAB> <<
-
-" Insert mode binding
-inoremap jj <esc>:w<CR>
 " Use TAB to indent and Shift-TAB to undent in insert mode
 inoremap <TAB> <C-t>
 inoremap <S-TAB> <C-d>
+
+" Insert mode binding
+inoremap jj <esc>:w<CR>
 
 " split window
 map sr :set splitright<CR>:vsplit<CR>
