@@ -28,6 +28,7 @@ jobs:
         run: |
           echo "$GITHUB_REF"
           echo "$GITHUB_REF:10"
+          echo ${{ github.event.release.tag_name }}
       
       # The docker/setup-qemu action installs QEMU static binaries, which are used to run builders for architectures other than the host.
       - name: Set up QEMU
@@ -59,4 +60,4 @@ jobs:
           push: true
           tags: |
             hikariai/nvim-server:latest
-            hikariai/nvim-server:1.0.0
+            hikariai/nvim-server:v1.0.0
