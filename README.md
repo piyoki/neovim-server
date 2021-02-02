@@ -112,6 +112,8 @@ After logging in with `username` and `password` in the web console, type `vim` t
 
 For the first launch, NeoVim will install the coc-extensions defined in [coc.settings](https://github.com/yqlbu/neovim-server/blob/master/nvim/coc-settings.json). You may also download additional coc-extensions followed by the [instructions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 
+All the functionalities and usage cases are written in the [Wiki Page](https://github.com/yqlbu/neovim-server/wiki), feel free to check it out.
+
 ## 📋 Wiki
 
 * [Wiki (EN)](https://github.com/yqlbu/neovim-server/wiki)
