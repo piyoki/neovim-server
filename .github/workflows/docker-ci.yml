@@ -61,4 +61,4 @@ jobs:
           push: true
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
-            ${{ env,REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
