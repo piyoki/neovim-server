@@ -110,6 +110,8 @@ Coming soon, please stay tuned!
 
 * All the functionalities and usage cases are written in the [Wiki Page](https://github.com/yqlbu/neovim-server/wiki), feel free to check it out.
 
+* To get familiar with the default key mappings, please visit the [Cheat Sheet Page](https://github.com/yqlbu/neovim-server/wiki/Cheat-sheet)
+
 ## 📋 Wiki
 
 * [Wiki (EN)](https://github.com/yqlbu/neovim-server/wiki)
