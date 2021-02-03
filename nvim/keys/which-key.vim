@@ -28,10 +28,11 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'Toggle Comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'Explorer' ]
-let g:which_key_map['f'] = [ ':Leaderf File'                     , 'Search Files' ]
+let g:which_key_map['f'] = [ ':Leaderf File'              , 'Search Files' ]
 let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'Ranger' ]
+let g:which_key_map['n'] = [ ':NERDTreeToggle'            , 'NERDTree' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'Start Screen' ]
-let g:which_key_map['p'] = [ '<Plug>(coc-format-selected)', 'Prettier format' ]
+let g:which_key_map['p'] = [ '<Plug>(coc-format-selected)', 'Prettier Format' ]
 let g:which_key_map['h'] = [ '<C-w>h'                     , 'Focus Left Window']
 let g:which_key_map['k'] = [ '<C-w>k'                     , 'Focus Top Window']
 let g:which_key_map['j'] = [ '<C-w>j'                     , 'Focus Bottom Window']
@@ -76,10 +77,10 @@ let g:which_key_map.c = {
       \ 'o'  : [':CocList outline'                 , 'CocList outline']      ,
       \ 'm'  : [':CocList marketplace'             , 'CocList marketplace']  ,
       \ 'd'  : [':CocList diagonostics'            , 'CocList diagonostics'] ,
-      \ 'a'  : [':<plug>(coc-codeaction-selected)' , 'Apply codeAction to the selected region'] ,
+      \ 'a'  : [':<Plug>(coc-codeaction-selected)' , 'Apply codeAction to the selected region'] ,
       \ 'rn' : [':<Plug>(coc-rename)'              , 'Rename'] ,
       \ 'ac' : [':<Plug>(coc-codeaction)'          , 'Apply codeAction to the current buffer'] ,
-      \ 'qf' : [':<Plug>(coc-rename)'              , 'Apply AutoFix to problem on the current line'] ,
+      \ 'qf' : [':<Plug>(coc-fix-current)'         , 'Apply Apply AutoFix to problem on the current line'],
       \ 'e'  : [':CocList extensions'              , 'Manage extensions'] ,
       \ 'k'  : [':CocPrev'                         , 'Apply default action to previous item'] ,
       \ 'j'  : [':CocNext'                         , 'Apply default action to next item'] ,
