@@ -10,16 +10,16 @@ colorscheme PaperColor
 
 " === Color Options ===
 
-" 235 -- Grey15
-" 255 -- White
-" 121 -- PaleGreen1
-" 48  -- SpringGreen1
+" 235 -- Grey15         --- #262626
+" 255 -- White          --- #eeeeee
+" 121 -- PaleGreen1     --- #87ffaf
+" 85  -- SpringGreen1   --- #5fffaf	
 
 " =====================
 
-" Pmenu colorscheme
-hi Pmenu ctermbg=235
-hi PmenuSel ctermbg=235 ctermfg=121
+"Pmenu colorscheme
+hi Pmenu guifg=#eeeeee guibg=#262626
+hi PmenuSel guifg=#262626 guifg=#5fffaf
 
 " Minimap colorscheme
 let g:minimap_highlight = 'MinimapCurrentLine'
