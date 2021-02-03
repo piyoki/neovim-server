@@ -38,6 +38,7 @@ check_python3() {
   echo -e "==> [step 2] confirmed python3 and pip are installed, moving forward"
   echo -e "==> [step 2] installing pynvim"
   pip install -U pynvim >/dev/null 2>&1
+  pip install -U neovim-remote >/dev/null 2>&1
   echo -e "==> [step 3] installing dependencies for plugins" && plug_dependencies
   main
 }
