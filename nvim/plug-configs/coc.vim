@@ -2,7 +2,9 @@
 let g:coc_global_extensions = [ 
       \'coc-marketplace', 
       \'coc-json', 
-      \'coc-python', 
+      \'coc-python',
+      \'coc-pyright',
+      \'coc-jedi',
       \'coc-snippets', 
       \'coc-tsserver',
       \'coc-css',
