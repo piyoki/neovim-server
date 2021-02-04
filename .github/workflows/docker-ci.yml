@@ -62,3 +62,13 @@ jobs:
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
             ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
+
+      # Push to GitHub Packages
+      - name: Push to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: yqlbu/neovim-server/nvim-server
+          tag_with_ref: true
