@@ -68,7 +68,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.TOKEN }}
           registry: docker.pkg.github.com
           repository: yqlbu/neovim-server/nvim-server
           tag_with_ref: true
