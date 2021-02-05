@@ -74,7 +74,9 @@ fi
 
 chown -R ${USER}:sudo ${HOME}
 chown -R ${USER}:sudo /config
+chown -R ${USER}:sudo ${HOME}/.config
 chown -R ${USER}:sudo /workspace
+chown -R ${USER}:sudo ${HOME}/workspace
 
 echo -e "==> [Step 4] Starting container .."
 if [ "$@" = "wetty" ]; then
