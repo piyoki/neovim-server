@@ -62,7 +62,7 @@ inoremap jj <esc>:w<CR>
 map sr :set splitright<CR>:vsplit<CR>
 map sl :set nosplitright<CR>:vsplit<CR>
 map su :set nosplitbelow<CR>:split<CR>
-map sd :set splitbelow<CR>:split<CR>
+map sb :set splitbelow<CR>:split<CR>
 
 " change split direction
 map sh <C-w>t<C-w>H
