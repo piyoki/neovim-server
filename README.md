@@ -31,7 +31,8 @@ You can use it to implement an IDE-like web-based terminal text editor.
 - Versatile and customizable
 - Containerized
 - Run on a web browser
-- Build with multi-arch (arm64/amd64)
+- Build with multi-arch (ARM/x86)
+- Supported platforms: `arm64`, `arm64`, `arm/v7`
 
 ## Prerequisites
 
