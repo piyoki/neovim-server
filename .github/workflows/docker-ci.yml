@@ -84,6 +84,6 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
             ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.BRANCH }}
