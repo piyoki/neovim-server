@@ -1,3 +1,17 @@
+
+#  _   _                 _             ____
+# | \ | | ___  _____   _(_)_ __ ___   / ___|  ___ _ ____   _____ _ __
+# |  \| |/ _ \/ _ \ \ / / | '_ ` _ \  \___ \ / _ \ '__\ \ / / _ \ '__|
+# | |\  |  __/ (_) \ V /| | | | | | |  ___) |  __/ |   \ V /  __/ |
+# |_| \_|\___|\___/ \_/ |_|_| |_| |_| |____/ \___|_|    \_/ \___|_|
+#
+# https://github.com/yqlbu/neovim-server
+#
+# Copyright (C) 2020-2021 yqlbu <https://hikariai.net>
+#
+# This is a open-source software, liscensed under the MIT License.
+# See /License for more information.
+
 FROM hikariai/wetty:latest
 
 ENV TZ=America/LosAngeles \
