@@ -3,6 +3,7 @@
     <em>A containerized IDE-like text editor that runs on a web server</em>
 </p>
 
+
 <p align="center">
     <a href='https://github.com/yqlbu/neovim-server/actions?query=workflow%3A"Docker+CI+Builds"'>
         <img src='https://github.com/yqlbu/neovim-server/workflows/Docker%20CI%20Builds/badge.svg' alt="CICD"/>
@@ -19,6 +20,7 @@
     </a>
 </p>
 
+
 This tool is for running NeoVim remotely and continuing the development process at 🚀 speed.
 You can use it to implement an IDE-like web-based terminal text editor.
 
@@ -27,6 +29,10 @@ You can use it to implement an IDE-like web-based terminal text editor.
 ## ✨ Features
 
 - Portable and light-weight
+- Support popular languages
+- Syntax highlight
+- Intellisense autocomplete
+- Markdown snippets and preview
 - Easy to deploy
 - Versatile and customizable
 - Containerized
@@ -85,15 +91,15 @@ Notes:
 - Wait for a couple seconds until the container finishes its bootstrap process, then visit `http://localhost:6080/wetty`
 - You may check the log by running `docker logs nvim-server`
 
-|            Parameters             |                               Usage                               |
-| :-------------------------------: | :---------------------------------------------------------------: |
-|       `--name nvim-server`        |                Specify the name for the container                 |
-|          `-p 6080:3000`           |               Map the port for accessing the Web UI               |
-|          `-p 8090:8090`           |       Map the port for the Instant Markdown Preview Server        |
-|    `-v ~/workspace:/workspace`    |                     Map the working directory                     |
-| `-v /appdata/nvim-server:/config` |        Contain all relevant configuration config directory        |
-|           `-e TZ=<TZ>`            |          Specify a timezone to use e.g. `Asia/Shanghai`           |
-|         `-e USER=<USER>`          |  Specify the username for user login, default is set to `guest`   |
+|            Parameters             |                            Usage                             |
+| :-------------------------------: | :----------------------------------------------------------: |
+|       `--name nvim-server`        |              Specify the name for the container              |
+|          `-p 6080:3000`           |            Map the port for accessing the Web UI             |
+|          `-p 8090:8090`           |     Map the port for the Instant Markdown Preview Server     |
+|    `-v ~/workspace:/workspace`    |                  Map the working directory                   |
+| `-v /appdata/nvim-server:/config` |     Contain all relevant configuration config directory      |
+|           `-e TZ=<TZ>`            |        Specify a timezone to use e.g. `Asia/Shanghai`        |
+|         `-e USER=<USER>`          | Specify the username for user login, default is set to `guest` |
 |       `-e SECRET=<SECRET>`        | Specify the password for user login, default is set to `password` |
 
 #### Build the image manually
@@ -137,3 +143,4 @@ Coming soon, please stay tuned!
 ## License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
+
