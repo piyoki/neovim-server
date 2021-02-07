@@ -29,8 +29,10 @@ You can use it to implement an IDE-like web-based terminal text editor.
 ## ✨ Features
 
 - Portable and light-weight
+- Support popular languages
 - Syntax highlight
 - Intellisense autocomplete
+- Markdown snippets and preview
 - Easy to deploy
 - Versatile and customizable
 - Containerized
