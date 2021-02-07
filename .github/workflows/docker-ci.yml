@@ -42,8 +42,8 @@ jobs:
           echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
           echo "IMAGE=nvim-server" >> $GITHUB_ENV
           echo "DOCKERHUB_REGISTRY=hikariai" >> $GITHUB_ENV
-          echo "GITHUB_REGISTRY=docker.pkg.github.com" >> $GITHUB_ENV
-          echo "GITHUB_PKG_REPOSITORY=yqlbu/neovim-server/nvim-server" >> $GITHUB_ENV
+          echo "GITHUB_REGISTRY=ghcr.io" >> $GITHUB_ENV
+          echo "GITHUB_PKG_REPOSITORY=yqlbu/nvim-server" >> $GITHUB_ENV
           echo "LATEST=latest" >> $GITHUB_ENV
 
       # The docker/setup-qemu action installs QEMU static binaries, which are used to run builders for architectures other than the host.
