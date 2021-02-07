@@ -8,8 +8,6 @@ services:
       dockerfile: containers/wetty/Dockerfile
     tty: true
     working_dir: /usr/src/app
-    ports:
-      - "3000:3000"
 
   neovim-server:
     image: hikariai/nvim-server:latest
@@ -20,3 +18,12 @@ services:
     working_dir: /workspace
     ports:
       - "6080:3000"
+      - "8090:8090"
+    environment:
+      - USER=guest
+      - SECRET=password
+      - TZ=Asia/Shanghai
+    volumes:
+      - $HOME/workspace:/workspace
+      - /appdata/nvim-server:/config
+    restart: unless-stopped
