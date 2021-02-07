@@ -87,3 +87,15 @@ jobs:
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
             ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.BRANCH }}
+
+      # Push to GitHub Container Registry
+      - name: Push to GitHub Container Registry
+        uses: docker/build-push-action@v1
+        with:
+          path: .
+          dockerfile: ./containers/nvim-server/Dockerfile
+          username: ${{ github.actor }}
+          password: ${{ secrets.TOKEN }}
+          registry: ${{ env.GITHUB_REGISTRY }}
+          repository: ${{ env.GITHUB_PKG_REPOSITORY }}
+          tag_with_ref: true
