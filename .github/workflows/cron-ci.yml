@@ -11,7 +11,7 @@
 # This is a open-source software, liscensed under the MIT License.
 # See /License for more information.
 
-name: Docker Weekly Cron CI
+name: Docker Daily Cron CI
 
 # Controls when the action will run. 
 on:
