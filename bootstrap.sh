@@ -7,7 +7,7 @@ hex()
   openssl rand -hex 8
 }
 
-echo -e "==> [Step 1] Bootstraping container .."
+echo -e "==> [INFO] Bootstraping container .."
 
 COMMAND="yarn start"
 HOME=/home/$USER
@@ -55,35 +55,40 @@ fi
 #fi
 
 if [ "$CONTAINER" != "wetty" ]; then
-  echo -e "==> [Step 2] Setting up environment .."
-  echo "alias ..='cd ..'" >> $HOME/.bashrc && echo "alias ...='cd ../../'" >> /home/$USER/.bashrc
-  echo "alias vim='nvim'" >> $HOME/.bashrc
-  echo "export LANG=en_US.UTF-8" >> $HOME/.bashrc
-  echo "export EDITOR=nvim" >> $HOME/.bashrc
-  echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
-  ln -sf /config $HOME/.config
-  if [[ ! -d "$HOME/.config/nvim" && ! -d "$HOME/.config/nvim" ]]; then
+  echo -e "==> [INFO] Setting up environment .."
+  if ! grep -xq "# BOOTSRAP ENV" $HOME/.bashrc ; then
+    echo "# BOOTSTRAP ENV" >> $HOME/.bashrc
+    echo "alias ..='cd ..'" >> $HOME/.bashrc && echo "alias ...='cd ../../'" >> /home/$USER/.bashrc
+    echo "alias vim='nvim'" >> $HOME/.bashrc
+    echo "export LANG=en_US.UTF-8" >> $HOME/.bashrc
+    echo "export EDITOR=nvim" >> $HOME/.bashrc
+    echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
+  fi
+
+  if [[ ! -L "$HOME/.config/nvim" && ! -L "$HOME/.config/ranger" ]]; then
+    ln -sf /config $HOME/.config
     cp -r /usr/src/app/nvim $HOME/.config/
     cp -r /usr/src/app/nvim/ranger $HOME/.config
   fi
-  ln -sf /workspace $HOME/workspace
 
-  echo -e "==> [Step 3] Setting up neovim .."
+  [ ! -L "$HOME/workspace" ] && ln -sf /workspace $HOME/workspace
+
+  echo -e "==> [INFO] Setting up / Updating neovim .."
   nvim --headless +PlugInstall +qall > /dev/null 2>&1
 fi
 
-chown -R ${USER}:sudo ${HOME}
-chown -R ${USER}:sudo /config
-chown -R ${USER}:sudo ${HOME}/.config
-chown -R ${USER}:sudo /workspace
-chown -R ${USER}:sudo ${HOME}/workspace
+# chown -R ${USER}:sudo ${HOME}
+# chown -R ${USER}:sudo /config
+# chown -R ${USER}:sudo ${HOME}/.config
+# chown -R ${USER}:sudo /workspace
+# chown -R ${USER}:sudo ${HOME}/workspace
 
-echo -e "==> [Step 4] Starting container .."
+echo -e "==> [INFO] Starting container .."
 if [ "$@" = "wetty" ]; then
-  echo "==> [INFO]  Executing: ${COMMAND}"
+  echo "==> [INFO] Executing: ${COMMAND}"
   exec ${COMMAND}
 else
-  echo "==> [INFO]  Not executing: ${COMMAND}"
-  echo "==> [INFO]  Executing: ${@}"
+  echo "==> [INFO] Not executing: ${COMMAND}"
+  echo "==> [INFO] Executing: ${@}"
   exec $@
 fi
