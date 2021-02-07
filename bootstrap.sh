@@ -56,8 +56,7 @@ fi
 
 if [ "$CONTAINER" != "wetty" ]; then
   echo -e "==> [INFO] Setting up environment .."
-  if [ "$(grep -Fxq "# BOOTSRAP ENV" $HOME/.bashrc)" ]
-  then
+  if grep -Fxq '# BOOTSTRAP ENV' $HOME/.bashrc ; then
     echo "==> [INFO] bashrc already setup, so skipped .."
   else
     echo "# BOOTSTRAP ENV" >> $HOME/.bashrc
