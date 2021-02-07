@@ -42,9 +42,8 @@ jobs:
           echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
           echo "IMAGE=nvim-server" >> $GITHUB_ENV
           echo "DOCKERHUB_REGISTRY=hikariai" >> $GITHUB_ENV
-          # echo "GITHUB_REGISTRY=docker.pkg.github.com" >> $GITHUB_ENV
-          echo "GITHUB_REGISTRY=ghcr.io" >> $GITHUB_ENV
-          echo "GITHUB_PKG_REPOSITORY=yqlbu/nvim-server" >> $GITHUB_ENV
+          echo "GITHUB_REGISTRY=docker.pkg.github.com" >> $GITHUB_ENV
+          echo "GITHUB_PKG_REPOSITORY=yqlbu/neovim-server/nvim-server" >> $GITHUB_ENV
           echo "LATEST=latest" >> $GITHUB_ENV
 
       # The docker/setup-qemu action installs QEMU static binaries, which are used to run builders for architectures other than the host.
@@ -87,16 +86,5 @@ jobs:
           tags: |
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
+            ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.LATEST }}
             ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.BRANCH }}
-
-      # Push to GitHub Container Registry
-      # - name: Push to GitHub Container Registry
-      #   uses: docker/build-push-action@v1
-      #   with:
-      #     path: .
-      #     dockerfile: ./containers/nvim-server/Dockerfile
-      #     username: ${{ github.actor }}
-      #     password: ${{ secrets.TOKEN }}
-      #     registry: ${{ env.GITHUB_REGISTRY }}
-      #     repository: ${{ env.GITHUB_PKG_REPOSITORY }}
-      #     tag_with_ref: true
