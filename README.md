@@ -80,6 +80,8 @@ docker run -d \
   -p 8090:8090 \
   -v ~/workspace:/workspace \
   -v /appdata/nvim-server:/config \
+  -e UID=$UID \
+  -e GId=$GID \
   -e TZ=Asia/Shanghai \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
@@ -98,6 +100,8 @@ Notes:
 |          `-p 8090:8090`           |     Map the port for the Instant Markdown Preview Server     |
 |    `-v ~/workspace:/workspace`    |                  Map the working directory                   |
 | `-v /appdata/nvim-server:/config` |     Contain all relevant configuration config directory      |
+|           `-e UID=$UID`           |                   Specify current user ID                    |
+|             `-e GID`              |                   Specify current group ID                   |
 |           `-e TZ=<TZ>`            |        Specify a timezone to use e.g. `Asia/Shanghai`        |
 |         `-e USER=<USER>`          | Specify the username for user login, default is set to `guest` |
 |       `-e SECRET=<SECRET>`        | Specify the password for user login, default is set to `password` |
