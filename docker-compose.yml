@@ -27,3 +27,4 @@ services:
       - $HOME/workspace:/workspace
       - /appdata/nvim-server:/config
     restart: unless-stopped
+
