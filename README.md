@@ -101,7 +101,7 @@ Notes:
 |    `-v ~/workspace:/workspace`    |                  Map the working directory                   |
 | `-v /appdata/nvim-server:/config` |     Contain all relevant configuration config directory      |
 |           `-e UID=$UID`           |                   Specify current user ID                    |
-|             `-e GID`              |                   Specify current group ID                   |
+|           `-e GID=$GID`           |                   Specify current group ID                   |
 |           `-e TZ=<TZ>`            |        Specify a timezone to use e.g. `Asia/Shanghai`        |
 |         `-e USER=<USER>`          | Specify the username for user login, default is set to `guest` |
 |       `-e SECRET=<SECRET>`        | Specify the password for user login, default is set to `password` |
