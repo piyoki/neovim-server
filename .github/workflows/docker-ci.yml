@@ -86,7 +86,6 @@ jobs:
           tags: |
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
-            ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.BRANCH }}
 
       # Push to GitHub Container Registry
       - name: Push to GitHub Container Registry
