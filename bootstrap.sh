@@ -56,7 +56,10 @@ fi
 
 if [ "$CONTAINER" != "wetty" ]; then
   echo -e "==> [INFO] Setting up environment .."
-  if ! grep -xq "# BOOTSRAP ENV" $HOME/.bashrc ; then
+  if [ "$(grep -Fxq "# BOOTSRAP ENV" $HOME/.bashrc)" ]
+  then
+    echo "==> [INFO] bashrc already setup, so skipped .."
+  else
     echo "# BOOTSTRAP ENV" >> $HOME/.bashrc
     echo "alias ..='cd ..'" >> $HOME/.bashrc && echo "alias ...='cd ../../'" >> /home/$USER/.bashrc
     echo "alias vim='nvim'" >> $HOME/.bashrc
@@ -65,23 +68,25 @@ if [ "$CONTAINER" != "wetty" ]; then
     echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
   fi
 
-  if [[ ! -L "$HOME/.config/nvim" && ! -L "$HOME/.config/ranger" ]]; then
+  if [[ ! -L "$HOME/.config/nvim" && ! -d "$HOME/.config/nvim" ]]; then
     ln -sf /config $HOME/.config
     cp -r /usr/src/app/nvim $HOME/.config/
     cp -r /usr/src/app/nvim/ranger $HOME/.config
   fi
 
-  [ ! -L "$HOME/workspace" ] && ln -sf /workspace $HOME/workspace
+  [[ ! -L "$HOME/workspace" && ! -d "$HOME/workspace" ]] && ln -sf /workspace $HOME/workspace
 
   echo -e "==> [INFO] Setting up / Updating neovim .."
   nvim --headless +PlugInstall +qall > /dev/null 2>&1
+
+  # echo -e "==> [INFO] Setting up / Updating coc extensions .."
 fi
 
-# chown -R ${USER}:sudo ${HOME}
-# chown -R ${USER}:sudo /config
-# chown -R ${USER}:sudo ${HOME}/.config
-# chown -R ${USER}:sudo /workspace
-# chown -R ${USER}:sudo ${HOME}/workspace
+chown -R ${USER}:${GID} ${HOME}
+chown -R ${USER}:${GID} /config
+chown -R ${USER}:${GID} ${HOME}/.config
+chown -R ${USER}:${GID} /workspace
+chown -R ${USER}:${GID} ${HOME}/workspace
 
 echo -e "==> [INFO] Starting container .."
 if [ "$@" = "wetty" ]; then
