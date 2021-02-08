@@ -41,19 +41,6 @@ if [ "${ADDUSER}" == "true" ]; then
   fi
 fi
 
-#for service in ${SERVICE}; do
-	#COMMAND+=" -s ${service}"
-#done
-
-#if [ "$SCRIPT" != "none" ]; then
-	#set +e
-	#/usr/bin/curl -s -k ${SCRIPT} > /prep.sh
-	#chmod +x /prep.sh
-	#echo "Running ${SCRIPT} .."
-	#/prep.sh
-	#set -e
-#fi
-
 if [ "$CONTAINER" != "wetty" ]; then
   echo -e "==> [INFO] Setting up environment .."
   if grep -Fxq '# BOOTSTRAP ENV' $HOME/.bashrc ; then
