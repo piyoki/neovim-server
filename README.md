@@ -112,7 +112,9 @@ Follow the instruction [HERE](https://github.com/yqlbu/neovim-server/wiki/Instal
 
 #### UNRAID User ONLY
 
-Coming soon, please stay tuned!
+`NeoVim Sever` is now available on `unRAID CA`. Search `nvim server` and install
+
+Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-templates)
 
 ## 💡 Usage
 
