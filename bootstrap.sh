@@ -59,6 +59,7 @@ if [ "$CONTAINER" != "wetty" ]; then
     ln -sf /config $HOME/.config
     cp -r /usr/src/app/nvim $HOME/.config/
     cp -r /usr/src/app/nvim/ranger $HOME/.config
+    cp -r /usr/src/app/nvim/lazygit $HOME/.config/jesseduffield/
     # Ranger plugin
     git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
   fi
