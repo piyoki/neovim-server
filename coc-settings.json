@@ -1,0 +1,39 @@
+{
+  // Pretter config
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "go",
+    "sh"
+  ],
+
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  "snippets.ultisnips.directories":
+  [
+    "UltiSnips",
+    "~/.config/nvim/utils/snips"
+  ],
+  
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    },
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  }
+}
