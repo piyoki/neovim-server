@@ -137,7 +137,7 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 - Add a customizable base image
 - Add more customizable features
 - Add more advanced usage cases
-- Add lazygit support
+- Add demo and usage guide for selection, registers, substitution, and macro
 
 ## Reference
 
