@@ -134,6 +134,9 @@ noremap ff :Leaderf file<CR>
 noremap fs :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 noremap fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
 
+" === Lazygit
+noremap <C-g> :tabe<CR>:term lazygit<CR>
+
 " === FZF
 " nnoremap ff :Files<CR>
 " nnoremap fs :Lines<CR>

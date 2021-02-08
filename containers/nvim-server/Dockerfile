@@ -27,8 +27,9 @@ ENV TZ=America/LosAngeles \
     CONTAINER=neovim-server
 
 RUN sudo add-apt-repository ppa:neovim-ppa/unstable -y
+RUN sudo add-apt-repository ppa:lazygit-team/release -y
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
-    wget python3-pip golang neovim ranger
+    wget python3-pip golang neovim ranger lazygit
 RUN ln -s /usr/bin/pip3 /usr/bin/pip && \
     ln -s /usr/bin/python3 /usr/bin/python && cp /usr/bin/python3 /usr/local/bin/
 RUN pip install -U pip && pip install -U \
