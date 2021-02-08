@@ -79,7 +79,7 @@ class Monokai(ColorScheme):
                 if context.good:
                     bg = green
             elif context.link:
-                fg = 81
+                fg = 140
 
         elif context.in_statusbar:
             if context.permissions:
