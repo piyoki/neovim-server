@@ -50,6 +50,7 @@ if [ "$CONTAINER" != "wetty" ]; then
     echo "alias ..='cd ..'" >> $HOME/.bashrc && echo "alias ...='cd ../../'" >> /home/$USER/.bashrc
     echo "alias vim='nvim'" >> $HOME/.bashrc
     echo "alias ra='ranger'" >> $HOME/.bashrc
+    echo "alias lg='lazygit'" >> $HOME/.bashrc
     echo "export LANG=en_US.UTF-8" >> $HOME/.bashrc
     echo "export EDITOR=nvim" >> $HOME/.bashrc
     echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
