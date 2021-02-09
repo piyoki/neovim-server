@@ -38,12 +38,12 @@ You can use it to implement an IDE-like web-based terminal text editor.
 - Build with multi-arch (ARM/x86)
 - Supported platforms: `arm64`, `arm64`, `arm/v7`
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 - `Driod Sans Mono Nerd Font` is required to be downloaded since its the default font of the container. You may find the installation guide below. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
 - Choose a web browser in your preference. Google Chrome, Microsoft Edge, and FireFox should work fine, whereas Safari does not work temporarily.
 
-## Font Installation
+## 📥 Font Installation
 
 Notes: `reboot` might be needed after the font installation
 
@@ -128,11 +128,16 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 
 - [Wiki (EN)](https://github.com/yqlbu/neovim-server/wiki)
 
-## 💬F.A.Q
+## 💬 F.A.Q
 
 - [F.A.Q (EN)](https://github.com/yqlbu/neovim-server/wiki/F.A.Q)
 
-## TODO
+## 🔨 Useful Tools for Vim
+
+- [Vim Cheatsheet Diagram](https://quickref.me/vim)
+- [Vim Official Tutorials](https://www.tutorialspoint.com/vim/vim_macros.htm)
+
+## 📝 TODO
 
 - Add a customizable base image
 - Add more customizable features
@@ -141,12 +146,12 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 - Add SSL support
 - Add relative number option
 
-## Reference
+## 📝 Reference
 
 - [wetty repository](https://github.com/butlerx/wetty)
 - [neovim repository](https://github.com/neovim/neovim)
 - [coc-nvim repository](https://github.com/neoclide/coc.nvim)
 
-## License
+## ⚖️ License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
