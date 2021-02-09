@@ -139,6 +139,7 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 - Add more advanced usage cases
 - Add demo and usage guide for selection, registers, substitution, and macro
 - Add SSL support
+- Add relative number option
 
 ## Reference
 
