@@ -132,12 +132,12 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 
 - [F.A.Q (EN)](https://github.com/yqlbu/neovim-server/wiki/F.A.Q)
 
-## Useful Tools for Vim
+## 🔨Useful Tools for Vim
 
 - [Vim Cheatsheet Diagram](https://quickref.me/vim)
 - [Vim Official Tutorials](https://www.tutorialspoint.com/vim/vim_macros.htm)
 
-## TODO
+## 📝TODO
 
 - Add a customizable base image
 - Add more customizable features
@@ -146,12 +146,12 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 - Add SSL support
 - Add relative number option
 
-## Reference
+## 📝Reference
 
 - [wetty repository](https://github.com/butlerx/wetty)
 - [neovim repository](https://github.com/neovim/neovim)
 - [coc-nvim repository](https://github.com/neoclide/coc.nvim)
 
-## License
+## ⚖️License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
