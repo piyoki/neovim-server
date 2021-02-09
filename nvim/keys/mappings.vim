@@ -21,9 +21,13 @@ noremap <C-c> <Esc>
 
 " Save, Quit, and Reload
 map s <nop>
-map S :w<CR>
-map Q :q<CR>
+nnoremap S :w<CR>
+nnoremap Q :q<CR>
 map R :source $MYVIMRC<CR>
+
+" Increment && Decrement
+noremap + <C-a>
+noremap _ <C-x>
 
 " Spell Check
 map sc :set spell!<CR>
