@@ -43,7 +43,7 @@ You can use it to implement an IDE-like web-based terminal text editor.
 - `Driod Sans Mono Nerd Font` is required to be downloaded since its the default font of the container. You may find the installation guide below. To use other fonts, please find the instructions on the [Nerd Font](https://github.com/ryanoasis/nerd-fonts) repository.
 - Choose a web browser in your preference. Google Chrome, Microsoft Edge, and FireFox should work fine, whereas Safari does not work temporarily.
 
-## 🅰Font Installation
+## 🔠Font Installation
 
 Notes: `reboot` might be needed after the font installation
 
