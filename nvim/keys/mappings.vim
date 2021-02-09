@@ -129,6 +129,8 @@ noremap <LEADER>u :UndotreeToggle<CR>
 " === Floaterm
 nnoremap <silent> <LEADER>T :FloatermToggle<CR>
 tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
+nnoremap <silent> <C-x> :FloatermToggle<CR>
+tnoremap <silent> <C-x> <C-\><C-n>:FloatermToggle<CR>
 
 " === Minimap
 nnoremap <silent> <LEADER>m :MinimapToggle<CR>
@@ -144,3 +146,10 @@ noremap <C-g> :tabe<CR>:term lazygit<CR>
 " === FZF
 " nnoremap ff :Files<CR>
 " nnoremap fs :Lines<CR>
+
+" === Asyncrun
+" Python
+noremap <LEADER>py :AsyncRun -raw python %<CR>
+noremap <LEADER>pt :AsyncRun -mode=term -pos=floaterm -position=bottomright 
+" Golang
+

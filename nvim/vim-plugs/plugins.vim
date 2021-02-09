@@ -69,6 +69,9 @@ Plug 'othree/html5.vim'
 Plug 'alvan/vim-closetag'
 Plug 'yuezk/vim-js', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] }
 
+" Asyncrun
+Plug 'skywind3000/asyncrun.vim'
+
 " Go
 Plug 'fatih/vim-go' , { 'for': ['go', 'vim-plug'], 'tag': '*' }
 
@@ -89,7 +92,7 @@ Plug 'kshenoy/vim-signature'
 " Editor Enhancement
 Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'
-Plug 'tpope/vim-surround'        " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
+Plug 'tpope/vim-surround'        " type yss' to wrap the word with '' or type cs'` to change 'word' to `word`
 Plug 'gcmt/wildfire.vim'         " in Visual mode, type k' to select all text in '', or type k) k] k} kp
 Plug 'junegunn/vim-after-object' " da= to delete what's after =
 Plug 'godlygeek/tabular'         " ga, or :Tabularize <regex> to align

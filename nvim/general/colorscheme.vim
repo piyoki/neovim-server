@@ -43,3 +43,5 @@ let g:minimap_highlight = 'MinimapCurrentLine'
 " DarkSpace Minimap
 hi MinimapCurrentLine ctermfg=48 guifg=#af5faf guibg=#262626 ctermbg=235 gui=bold
 
+" asyncrun statusline
+let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])

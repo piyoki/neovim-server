@@ -110,6 +110,8 @@ source $HOME/.config/nvim/plug-configs/leaderF.vim
 source $HOME/.config/nvim/plug-configs/vim-instant-markdown.vim
 " === vim-markdown
 source $HOME/.config/nvim/plug-configs/vim-markdown.vim
+" === asyncrun
+source $HOME/.config/nvim/plug-configs/asyncrun.vim
 
 
 " ========================
