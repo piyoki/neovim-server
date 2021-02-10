@@ -10,13 +10,13 @@ set encoding=utf-8 " The encoding displayed
 syntax enable " Enable syntax highlighting
 set showcmd
 set wildmenu
-set mouse=a
+set mouse=c   " Enable mouse to access clipboard
 set exrc
 set secure
 
-                    "  View and Edit
+"  View and Edit
 set number          "  enable line numbers
-"set relativenumber  "  enable relative line numbers
+set relativenumber  "  enable relative line numbers
 "set guicursor=      "  set block cursor for insert mode
 set cursorline      "  enable highlighting of the current line
 set ruler           "  show the cursor position all the time
