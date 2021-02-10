@@ -104,6 +104,10 @@ noremap \s :%s//g<left><left>
 " Wrap
 noremap <LEADER>sw :set wrap<CR>
 
+" Clipboard
+nnoremap <C-v> "+gp
+nnoremap <C-y> "+yy
+vnoremap <C-y> "+y
 
 " ===========================
 " === Plugins Key Binding ===

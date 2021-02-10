@@ -1,4 +1,4 @@
 # global definitions
 global:
-  relativenumber: true
-  cmd_linenumber: 2
+  "set relativenumber": true
+  "set cmdheight": 2

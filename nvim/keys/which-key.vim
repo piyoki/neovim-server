@@ -33,13 +33,13 @@ let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'Ranger' ]
 let g:which_key_map['n'] = [ ':NERDTreeToggle'            , 'NERDTree' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'Start Screen' ]
 let g:which_key_map['G'] = [ ':FloatermNew lazygit'       , 'Lazygit']
-let g:which_key_map['p'] = [ '<Plug>(coc-format-selected)', 'Prettier Format' ]
 let g:which_key_map['h'] = [ '<C-w>h'                     , 'Focus Left Window']
 let g:which_key_map['k'] = [ '<C-w>k'                     , 'Focus Top Window']
 let g:which_key_map['j'] = [ '<C-w>j'                     , 'Focus Bottom Window']
 let g:which_key_map['l'] = [ '<C-w>l'                     , 'Focus Right Window']
 let g:which_key_map['-'] = [ ':-tabnext'                  , 'Previous Tab']
 let g:which_key_map['='] = [ ':tabnext'                   , 'Next Tab']
+" let g:which_key_map['p'] = [ '<Plug>(coc-format-selected)', 'Prettier Format' ]
 
 
 " w is for Window Operations
