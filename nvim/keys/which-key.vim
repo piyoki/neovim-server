@@ -51,13 +51,11 @@ let g:which_key_map.w = {
       \ '-' : [':vertical res-5' , 'Decrease current window width'] ,
       \ }
 
-" t is for telescope Search
-let g:which_key_map.t = {
-      \ 'name' : '+Telescope' ,
-      \ 'f' : [':Telescope search_file' , 'Search file']    ,
-      \ 'h' : [':Telescope help_tags'   , 'Help tags']      ,
-      \ 's' : [':Telescope live_grep'   , 'Search line']    ,
-      \ 'b' : [':Telescope buffers'     , 'Search buffers'] ,
+" a is for AsyncRun
+let g:which_key_map.a = {
+      \ 'name' : '+AsyncRun' ,
+      \ 'p' : [':AsyncRun -raw python %' , 'Run current python script'],
+      \ 'c' : [':cclose' , 'Close QuickFix window']
       \ }
 
 " x is for Terminal Operations

@@ -119,10 +119,6 @@ autocmd VimEnter * nnoremap <silent> <C-N> :NERDTreeToggle<CR>
 " === Tabular
 vmap tb :Tabularize /
 
-" === COC
-vmap <C-p> <Plug>(coc-format-selected)
-nmap <C-p> <Plug>(coc-format-selected)
-
 " === UndoTree
 noremap <LEADER>u :UndotreeToggle<CR>
 
@@ -149,7 +145,6 @@ noremap <C-g> :tabe<CR>:term lazygit<CR>
 
 " === Asyncrun
 " Python
-noremap <LEADER>py :AsyncRun -raw python %<CR>
-noremap <LEADER>pt :AsyncRun -mode=term -pos=floaterm -position=bottomright 
+noremap <C-p> :AsyncRun -raw python %<CR>
 " Golang
 
