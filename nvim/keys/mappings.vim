@@ -61,6 +61,7 @@ inoremap <S-TAB> <C-d>
 
 " Insert mode binding
 inoremap jj <esc>:w<CR>
+inoremap <C-o> <esc>o
 
 " split window
 map sr :set splitright<CR>:vsplit<CR>
@@ -106,8 +107,8 @@ noremap <LEADER>sw :set wrap<CR>
 
 " Clipboard
 nnoremap <C-v> "+gp
-nnoremap <C-y> "+yy
-vnoremap <C-y> "+y
+nnoremap <C-c> "+yy
+vnoremap <C-c> "+y
 
 " ===========================
 " === Plugins Key Binding ===
