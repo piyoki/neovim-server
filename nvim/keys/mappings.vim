@@ -101,7 +101,8 @@ autocmd VimEnter * noremap <LEADER>/ :call NERDComment(0,"toggle")<CR>
 noremap <LEADER>sc :set spell!<CR>
 
 " Find and Replace
-noremap \s :%s//g<left><left>
+vnoremap \s :s//g<left><left>
+nnoremap \s :%s//g<left><left>
 
 " Wrap
 noremap <LEADER>sw :set wrap<CR>
