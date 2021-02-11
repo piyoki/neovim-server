@@ -2,7 +2,8 @@
 let mapleader = " "
 let &t_ut     = ''
 set autochdir
-set encoding=utf-8 " The encoding displayed
+set encoding=utf-8     "  The encoding displayed
+au InsertLeave * write "  Autosave when exiting insert mode
 
 " === Rebind Caplock with Esc
 
