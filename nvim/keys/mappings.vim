@@ -131,7 +131,7 @@ noremap <LEADER>u :UndotreeToggle<CR>
 
 " === Floaterm
 " Terminal mode binding
-autocmd VimEnter * tnoremap <silent> Q <C-\><C-N>
+tnoremap <silent> Q <C-\><C-N>
 " Floaterm binding
 nnoremap <silent> <LEADER>T :FloatermToggle<CR>
 tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
