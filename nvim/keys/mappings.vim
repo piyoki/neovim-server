@@ -62,6 +62,7 @@ inoremap <S-TAB> <C-d>
 " Insert mode binding
 inoremap jj <esc>:w<CR>
 inoremap <C-o> <esc>o
+inoremap vv <esc>:bv
 
 " split window
 map sr :set splitright<CR>:vsplit<CR>
