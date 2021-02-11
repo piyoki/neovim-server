@@ -2,3 +2,12 @@
 global:
   "set relativenumber": true
   "set cmdheight": 2
+vim-plug:
+  add:
+    - "vim-surroud"
+pkg:
+  add:
+    - "Ubuntu"
+pip:
+  add:
+    - "pylint"

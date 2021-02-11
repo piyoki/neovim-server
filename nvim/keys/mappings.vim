@@ -62,6 +62,7 @@ inoremap <S-TAB> <C-d>
 " Insert mode binding
 inoremap jj <esc>:w<CR>
 inoremap <C-o> <esc>o
+inoremap vv <esc>:bv
 
 " split window
 map sr :set splitright<CR>:vsplit<CR>
@@ -100,7 +101,8 @@ autocmd VimEnter * noremap <LEADER>/ :call NERDComment(0,"toggle")<CR>
 noremap <LEADER>sc :set spell!<CR>
 
 " Find and Replace
-noremap \s :%s//g<left><left>
+vnoremap \s :s//g<left><left>
+nnoremap \s :%s//g<left><left>
 
 " Wrap
 noremap <LEADER>sw :set wrap<CR>
@@ -128,6 +130,9 @@ vmap tb :Tabularize /
 noremap <LEADER>u :UndotreeToggle<CR>
 
 " === Floaterm
+" Terminal mode binding
+autocmd VimEnter * tnoremap <silent> Q <C-\><C-N>
+" Floaterm binding
 nnoremap <silent> <LEADER>T :FloatermToggle<CR>
 tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
 nnoremap <silent> <C-x> :FloatermToggle<CR>
