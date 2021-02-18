@@ -77,7 +77,7 @@ let g:which_key_map.c = {
       \ 'm'  : [':CocList marketplace'             , 'CocList marketplace']  ,
       \ 'd'  : [':CocList diagonostics'            , 'CocList diagonostics'] ,
       \ 'a'  : [':<Plug>(coc-codeaction-selected)' , 'Apply codeAction to the selected region'] ,
-      \ 'rn' : [':<Plug>(coc-rename)'              , 'Rename'] ,
+      \ 'r' :  [':<Plug>(coc-rename)'              , 'Rename'] ,
       \ 'ac' : [':<Plug>(coc-codeaction)'          , 'Apply codeAction to the current buffer'] ,
       \ 'qf' : [':<Plug>(coc-fix-current)'         , 'Apply Apply AutoFix to problem on the current line'],
       \ 'e'  : [':CocList extensions'              , 'Manage extensions'] ,
