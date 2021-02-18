@@ -38,6 +38,7 @@ RUN wget https://github.com/wfxr/code-minimap/releases/download/v0.4.3/code-mini
     sudo dpkg -i code-minimap_0.4.3_amd64.deb && rm -rf code-minimap_0.4.3_amd64.deb
 RUN npm install -g neovim vim-node-rpc
 RUN npm install -g instant-markdown-d@next
+RUN npm install -g typescript
 RUN sudo apt-get clean && \
     rm -rf /var/lib/apt/list/* /tmp/* /var/tmp/*
 
