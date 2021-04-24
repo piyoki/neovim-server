@@ -25,6 +25,12 @@ nnoremap S :w<CR>
 nnoremap Q :q<CR>
 map R :source $MYVIMRC<CR>
 
+" Move lines around
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
+
 " Increment && Decrement
 noremap + <C-a>
 noremap _ <C-x>
