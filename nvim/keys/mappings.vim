@@ -137,7 +137,7 @@ noremap <LEADER>u :UndotreeToggle<CR>
 
 " === Floaterm
 " Terminal mode binding
-tnoremap <silent> Q <C-\><C-N>
+tnoremap <silent> Q <C-\><C-N>:q<CR>
 " Floaterm binding
 nnoremap <silent> <LEADER>T :FloatermToggle<CR>
 tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
