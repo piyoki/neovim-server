@@ -114,7 +114,7 @@ nnoremap \s :%s//g<left><left>
 noremap <LEADER>sw :set wrap<CR>
 
 " Clipboard
-nnoremap <C-v> "+gp
+nnoremap <C-p> "+gp
 nnoremap <C-c> "+yy
 vnoremap <C-c> "+y
 
@@ -138,6 +138,7 @@ noremap <LEADER>u :UndotreeToggle<CR>
 " === Floaterm
 " Terminal mode binding
 tnoremap <silent> Q <C-\><C-N>:q<CR>
+
 " Floaterm binding
 nnoremap <silent> <LEADER>T :FloatermToggle<CR>
 tnoremap <silent> X <C-\><C-n>:FloatermToggle<CR>
@@ -161,6 +162,6 @@ noremap <C-g> :tabe<CR>:term lazygit<CR>
 
 " === Asyncrun
 " Python
-noremap <C-p> :AsyncRun -raw python %<CR>
+" noremap <C-p> :AsyncRun -raw python %<CR>
 " Golang
 
