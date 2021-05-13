@@ -62,8 +62,17 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 #### Arch User ONLY
 
-```bash
+````bash
 yay -S nerd-fonts-droid-sans-mono
+
+
+**NOTE:** if your current browser cannot load the `font` and the `icon` properly, you may try to manully apply the configuration to the wetty window:
+
+```json
+{
+  "fontSize": 16,
+  "fontFamily": "DroidSansMono Nerd Font"
+}
 ```
 
 ## 📥 Installation
@@ -155,3 +164,4 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 ## ⚖️ License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
+````
