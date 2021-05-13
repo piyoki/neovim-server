@@ -47,6 +47,7 @@ RUN if [ "$(cat ./ARCH)" = "amd64" ] ; then \
 RUN npm install -g neovim vim-node-rpc
 RUN npm install -g instant-markdown-d@next
 RUN npm install -g typescript
+RUN npm install -g bash-language-server
 RUN sudo apt-get clean && \
     rm -rf /var/lib/apt/list/* /tmp/* /var/tmp/* && \
     rm -rf ./ARCH
