@@ -57,6 +57,7 @@ WORKDIR /usr/src/app
 EXPOSE 3000
 
 ADD ./bootstrap.sh /usr/local/sbin
+RUN chmod u+x /usr/local/sbin/bootstrap.sh
 COPY ./nvim /usr/src/app/nvim
 
 ENTRYPOINT [ "bootstrap.sh" ]
