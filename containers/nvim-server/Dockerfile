@@ -42,7 +42,7 @@ RUN if [ "$(cat ./ARCH)" = "amd64" ] ; then \
     else \
       wget https://github.com/wfxr/code-minimap/releases/download/v0.6.0/code-minimap_0.6.0_arm64.deb; \
       dpkg -i code-minimap_0.6.0_arm64.deb; \
-    # rm -rf code-minimap_0.6.0*.deb; \
+    rm -rf code-minimap_0.6.0*.deb; \
     fi
 RUN npm install -g neovim vim-node-rpc
 RUN npm install -g instant-markdown-d@next
