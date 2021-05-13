@@ -26,7 +26,7 @@ ENV TZ=America/LosAngeles \
     SSL=false \
     CONTAINER=neovim-server
 
-RUN ARCH=$(dpkg --print-architecture)
+RUN ARCH=$(dpkg --print-architecture) && echo $ARCH > ./ARCH
 
 RUN sudo add-apt-repository ppa:neovim-ppa/unstable -y
 RUN sudo add-apt-repository ppa:lazygit-team/release -y
@@ -36,19 +36,20 @@ RUN rm -rf /usr/bin/pip && ln -s /usr/bin/pip3 /usr/bin/pip && \
     rm -rf /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python
 RUN pip install -U pip && pip install -U \
     pynvim neovim-remote pylint
-RUN if [ "$ARCH" == "amd64" ] ; then \
+RUN if [ "$(cat ./ARCH)" = "amd64" ] ; then \
       wget https://github.com/wfxr/code-minimap/releases/download/v0.6.0/code-minimap_0.6.0_amd64.deb; \
       dpkg -i code-minimap_0.6.0_amd64.deb; \
     else \
       wget https://github.com/wfxr/code-minimap/releases/download/v0.6.0/code-minimap_0.6.0_arm64.deb; \
       dpkg -i code-minimap_0.6.0_arm64.deb; \
-    rm -rf code-minimap_0.6.0*.deb; \
+    # rm -rf code-minimap_0.6.0*.deb; \
     fi
 RUN npm install -g neovim vim-node-rpc
 RUN npm install -g instant-markdown-d@next
 RUN npm install -g typescript
 RUN sudo apt-get clean && \
-    rm -rf /var/lib/apt/list/* /tmp/* /var/tmp/*
+    rm -rf /var/lib/apt/list/* /tmp/* /var/tmp/* && \
+    rm -rf ./ARCH
 
 WORKDIR /usr/src/app
 
