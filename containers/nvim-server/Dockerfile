@@ -26,6 +26,8 @@ ENV TZ=America/LosAngeles \
     SSL=false \
     CONTAINER=neovim-server
 
+RUN ARCH=$(lscpu | awk '/Architecture:/{print $2}')
+
 RUN sudo add-apt-repository ppa:neovim-ppa/unstable -y
 RUN sudo add-apt-repository ppa:lazygit-team/release -y
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
@@ -34,8 +36,9 @@ RUN rm -rf /usr/bin/pip && ln -s /usr/bin/pip3 /usr/bin/pip && \
     rm -rf /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python
 RUN pip install -U pip && pip install -U \
     pynvim neovim-remote pylint
-RUN wget https://github.com/wfxr/code-minimap/releases/download/v0.4.3/code-minimap_0.4.3_amd64.deb && \
-    sudo dpkg -i code-minimap_0.4.3_amd64.deb && rm -rf code-minimap_0.4.3_amd64.deb
+RUN wget https://github.com/wfxr/code-minimap/releases/download/v0.6.0/code-minimap_0.6.0_amd64.deb && \
+    wget https://github.com/wfxr/code-minimap/releases/download/v0.6.0/code-minimap_0.6.0_arm64.deb
+RUN [[ "$ARCH" == "x86_64" ]] && dpkg -i code-minimap_0.6.0.deb || dpkg -i code-minimap_0.6.0_arm64.deb && rm -rf code-minimap_0.6.0*.deb
 RUN npm install -g neovim vim-node-rpc
 RUN npm install -g instant-markdown-d@next
 RUN npm install -g typescript
