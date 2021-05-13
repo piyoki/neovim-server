@@ -30,8 +30,8 @@ RUN sudo add-apt-repository ppa:neovim-ppa/unstable -y
 RUN sudo add-apt-repository ppa:lazygit-team/release -y
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
     python3-pip golang neovim ranger lazygit
-RUN ln -s /usr/bin/pip3 /usr/bin/pip && \
-    ln -s /usr/bin/python3 /usr/bin/python
+RUN rm -rf /usr/bin/pip && ln -s /usr/bin/pip3 /usr/bin/pip && \
+    rm -rf /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python
 RUN pip install -U pip && pip install -U \
     pynvim neovim-remote pylint
 RUN wget https://github.com/wfxr/code-minimap/releases/download/v0.4.3/code-minimap_0.4.3_amd64.deb && \
