@@ -164,7 +164,3 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 ## ⚖️ License
 
 [MIT (C) Kevin Yu](https://github.com/yqlbu/neovim-server/blob/master/LICENSE)
-
-```
-
-```
