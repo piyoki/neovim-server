@@ -66,9 +66,10 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 yay -S nerd-fonts-droid-sans-mono
 
 
-**NOTE:** if your current browser cannot load the `font` and the `icon` properly, you may try to manully apply the configuration to the wetty window:
+**NOTE:** if your current browser cannot load the `font` and the `icon`, you may try to manully apply the configuration to the wetty window:
 
-```json
+
+```
 {
   "fontSize": 16,
   "fontFamily": "DroidSansMono Nerd Font"
