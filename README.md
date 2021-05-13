@@ -66,7 +66,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 yay -S nerd-fonts-droid-sans-mono
 ```
 
-**NOTE:** if your current browser cannot load the `font` and the `icon`, you may manually apply the configuration to the wetty window located on the upper right corner:
+**NOTE:** if your current browser cannot load the `font` and the `icon`, you may manually apply the configuration to the wetty configuration window located on the upper right corner:
 
 ```json
 {
