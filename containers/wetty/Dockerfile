@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM node:lts-slim
 
 ENV TZ=America/LosAngeles \
     PORT=3000 \
@@ -20,14 +20,14 @@ RUN echo $TZ > /etc/timezone && apt-get install -y tzdata && \
     dpkg-reconfigure tzdata && locale-gen en_US.UTF-8 
 RUN apt-get install -y --no-install-recommends git ca-certificates software-properties-common gnupg gnupg-agent
 RUN apt-get install -y --no-install-recommends python3 build-essential make
-RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-RUN apt-get update && apt-get install -y nodejs && npm install -g yarn
 RUN apt-get clean && \
     rm -rf /var/lib/apt/list/* /tmp/* /var/tmp/* 
 RUN mkdir -p ~/.ssh
 
 WORKDIR /usr/src/app
-COPY ./wetty /usr/src/app/
+COPY ./wetty .
+
+# RUN yarn global add wetty
 
 RUN yarn && \
     yarn build && \
