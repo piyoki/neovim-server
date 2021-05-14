@@ -31,7 +31,7 @@ RUN ARCH=$(dpkg --print-architecture) && echo $ARCH > ./ARCH
 RUN sudo add-apt-repository ppa:neovim-ppa/unstable -y
 RUN sudo add-apt-repository ppa:lazygit-team/release -y
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
-    wget python3-pip golang neovim ranger lazygit
+    wget python3-dev python3-pip golang neovim ranger lazygit
 RUN rm -rf /usr/bin/pip && ln -s /usr/bin/pip3 /usr/bin/pip && \
     rm -rf /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python
 RUN pip install -U pip && pip install -U \
