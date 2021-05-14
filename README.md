@@ -104,7 +104,6 @@ $ docker logs nvim-server --follow
 Notes:
 
 - Wait for a couple seconds until the container finishes its bootstrap process, then visit `http://localhost:6080/wetty`
-- You may check the log by running `docker logs nvim-server`
 
 |            Parameters             |                               Usage                               |
 | :-------------------------------: | :---------------------------------------------------------------: |
