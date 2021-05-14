@@ -50,6 +50,7 @@ jobs:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@master
         with:
+          image: tonistiigi/binfmt:latest
           platforms: all
 
       # The docker/setup-buildx action configures buildx, which is a Docker CLI plugin that provides enhanced build capabilities.

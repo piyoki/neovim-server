@@ -13,11 +13,11 @@
 
 name: Docker Daily Cron CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   schedule:
     # Runs at 00:00 everyday
-    - cron:  '0 0 * * *'
+    - cron: "0 0 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -46,6 +46,7 @@ jobs:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@master
         with:
+          image: tonistiigi/binfmt:latest
           platforms: all
 
       # The docker/setup-buildx action configures buildx, which is a Docker CLI plugin that provides enhanced build capabilities.
