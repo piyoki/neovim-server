@@ -40,7 +40,8 @@ jobs:
       - name: Set environment variable
         run: |
           echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
-          echo "IMAGE=nvim-server" >> $GITHUB_ENV
+          echo "MAIN_IMAGE=nvim-server" >> $GITHUB_ENV
+          echo "BASE_IMAGE=wetty" >> $GITHUB_ENV
           echo "DOCKERHUB_REGISTRY=hikariai" >> $GITHUB_ENV
           echo "GITHUB_REGISTRY=ghcr.io" >> $GITHUB_ENV
           echo "GITHUB_PKG_REPOSITORY=yqlbu/nvim-server" >> $GITHUB_ENV
@@ -75,6 +76,18 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
 
+      # Build wetty image
+      - name: Build and Push
+        uses: docker/build-push-action@v2
+        with:
+          builder: ${{ steps.buildx.outputs.name }}
+          context: .
+          file: ./containers/wetty/Dockerfile
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          push: true
+          tags: |
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.BASE_IMAGE }}:${{ env.LATEST }}
+
       # Build and Push the images
       - name: Build and Push
         uses: docker/build-push-action@v2
@@ -85,7 +98,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
-            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.BRANCH }}
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.MAIN_IMAGE }}:${{ env.LATEST }}
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.MAIN_IMAGE }}:${{ env.BRANCH }}
             ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.LATEST }}
             ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.BRANCH }}

@@ -37,7 +37,8 @@ jobs:
       # Get current tag version and pass it as environment variable
       - name: Set environment variable
         run: |
-          echo "IMAGE=nvim-server" >> $GITHUB_ENV
+          echo "MAIN_IMAGE=nvim-server" >> $GITHUB_ENV
+          echo "BASE_IMAGE=wetty" >> $GITHUB_ENV
           echo "DOCKERHUB_REGISTRY=hikariai" >> $GITHUB_ENV
           echo "GITHUB_REGISTRY=ghcr.io" >> $GITHUB_ENV
           echo "GITHUB_PKG_REPOSITORY=yqlbu/nvim-server" >> $GITHUB_ENV
@@ -72,14 +73,27 @@ jobs:
           password: ${{ secrets.TOKEN }}
 
       # Build and Push the images
+      # Build wetty image
       - name: Build and Push
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
-          file: ./containers/nvim-server/Dockerfile
+          file: ./containers/wetty/Dockerfile
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.BASE_IMAGE }}:${{ env.LATEST }}
+
+      # build nvim-server image
+      - name: build and push
+        uses: docker/build-push-action@v2
+        with:
+          builder: ${{ steps.buildx.outputs.name }}
+          context: .
+          file: ./containers/nvim-server/dockerfile
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          push: true
+          tags: |
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.MAIN_IMAGE }}:${{ env.LATEST }}
             ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.LATEST }}
