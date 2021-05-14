@@ -83,7 +83,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
           file: ./containers/wetty/Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: |
             ${{ env.DOCKERHUB_REGISTRY }}/${{ env.BASE_IMAGE }}:${{ env.LATEST }}
