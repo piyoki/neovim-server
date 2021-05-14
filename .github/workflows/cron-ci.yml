@@ -44,7 +44,7 @@ jobs:
           echo "LATEST=latest" >> $GITHUB_ENV
       # The docker/setup-qemu action installs QEMU static binaries, which are used to run builders for architectures other than the host.
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@master
+        uses: docker/setup-qemu-action@v1
         with:
           image: tonistiigi/binfmt:latest
           platforms: all
@@ -52,7 +52,7 @@ jobs:
       # The docker/setup-buildx action configures buildx, which is a Docker CLI plugin that provides enhanced build capabilities.
       - name: Set up Docker Buildx
         id: buildx
-        uses: docker/setup-buildx-action@master
+        uses: docker/setup-buildx-action@v1
 
       # Login to DockerHub
       - name: Login to DockerHub
