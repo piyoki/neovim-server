@@ -148,12 +148,13 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 
 ## 📝 TODO
 
-- Add a customizable base image
-- Add more customizable features
-- Add more advanced usage cases
-- Add demo and usage guide for selection, registers, substitution, and macro
-- Add SSL support
-- Add relative number option
+- [ ] Add a customizable base image
+- [ ] Add more customizable features
+- [ ] Add more advanced usage cases
+- [ ] Add demo and usage guide for selection, registers, substitution, and macro
+- [ ] Add SSL support
+- [x] Add relative number option
+- [ ] Add wetty rolling updates
 
 ## 📝 Reference
 
