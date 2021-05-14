@@ -28,15 +28,7 @@ RUN mkdir -p ~/.ssh
 
 WORKDIR /usr/src/app
 COPY ./wetty /usr/src/app/
-#RUN git clone https://github.com/butlerx/wetty && cp -r wetty/* . && rm -rf wetty/
+
 RUN yarn && \
     yarn build && \
     yarn install --production --ignore-scripts --prefer-offline
-
-EXPOSE 3000
-
-ADD ./bootstrap.sh /usr/local/sbin
-
-ENTRYPOINT [ "bootstrap.sh" ]
-CMD [ "wetty" ]
-
