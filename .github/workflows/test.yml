@@ -40,7 +40,7 @@ jobs:
           echo "DOCKERHUB_REGISTRY=hikariai" >> $GITHUB_ENV
           echo "GITHUB_REGISTRY=ghcr.io" >> $GITHUB_ENV
           echo "GITHUB_PKG_REPOSITORY=yqlbu/nvim-server" >> $GITHUB_ENV
-          echo "LATEST=latest" >> $GITHUB_ENV
+          echo "TAG=test" >> $GITHUB_ENV
       # The docker/setup-qemu action installs QEMU static binaries, which are used to run builders for architectures other than the host.
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -74,3 +74,16 @@ jobs:
       - name: Print the current system architecture
         run: |
           echo $(dpkg --print-architecture)
+
+      # Build and Push the images
+      - name: Build and Push
+        uses: docker/build-push-action@v2
+        with:
+          builder: ${{ steps.buildx.outputs.name }}
+          context: .
+          file: ./containers/test/Dockerfile
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          push: true
+          tags: |
+            ${{ env.DOCKERHUB_REGISTRY }}/${{ env.IMAGE }}:${{ env.LATEST }}
+            ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_PKG_REPOSITORY }}:${{ env.TAG }}
