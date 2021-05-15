@@ -91,7 +91,7 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
-          file: ./containers/nvim-server/dockerfile
+          file: ./containers/nvim-server/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
