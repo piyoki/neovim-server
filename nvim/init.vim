@@ -112,7 +112,9 @@ source $HOME/.config/nvim/plug-configs/vim-instant-markdown.vim
 source $HOME/.config/nvim/plug-configs/vim-markdown.vim
 " === asyncrun
 source $HOME/.config/nvim/plug-configs/asyncrun.vim
-
+" === fakeclip
+" source $HOME/.config/nvim/plug-configs/fakeclip.vim
+source $HOME/.config/nvim/plug-configs/terraform.vim
 
 " ========================
 " === General Settings ===

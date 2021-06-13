@@ -62,6 +62,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cohama/agit.vim'
 Plug 'kdheepak/lazygit.nvim'
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
 " HTML, CSS, JavaScript, Typescript, PHP, JSON, etc.
 Plug 'elzr/vim-json'
 Plug 'neoclide/jsonc.vim'
@@ -86,8 +89,11 @@ Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'm
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }                       "  Generate Table of Content
 Plug 'tpope/vim-markdown'                                                                               "  Support other filename other than README.md
 
-"Bookmarks
+" Bookmarks
 Plug 'kshenoy/vim-signature'
+
+" Clipboard
+Plug 'kana/vim-fakeclip'
 
 " Editor Enhancement
 Plug 'jiangmiao/auto-pairs'
