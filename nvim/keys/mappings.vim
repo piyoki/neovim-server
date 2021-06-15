@@ -101,7 +101,9 @@ autocmd VimEnter * noremap <LEADER>/ :call NERDComment(0,"toggle")<CR>
 " ===
 
 " Opening a terminal window
-"noremap <LEADER>, :set splitbelow<CR>:split<CR>:res +5<CR>:term<CR>
+" noremap <LEADER>, :set splitbelow<CR>:split<CR>:res +5<CR>:term<CR>
+noremap <LEADER>, :tabe<CR>:term<CR>
+tnoremap <Esc> <C-\><C-n>
 
 " Spelling Check with <space>sc
 noremap <LEADER>sc :set spell!<CR>
