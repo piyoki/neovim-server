@@ -138,6 +138,8 @@ Detailed installation guide is available [HERE](https://github.com/yqlbu/unraid-
 
 - To get familiar with the default key mappings, please visit the [Cheat Sheet Page](https://github.com/yqlbu/neovim-server/wiki/Cheat-sheet)
 
+- For accessing the `Markdown Preview`, simply open a web browser tab and copy the `URL` display in the status bar when editing a markdown file
+
 ## 📋 Wiki
 
 - [Wiki (EN)](https://github.com/yqlbu/neovim-server/wiki)
