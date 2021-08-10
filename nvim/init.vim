@@ -106,8 +106,6 @@ source $HOME/.config/nvim/plug-configs/minimap.vim
 source $HOME/.config/nvim/plug-configs/NERD-Commenter.vim
 " === LeaderF
 source $HOME/.config/nvim/plug-configs/leaderF.vim
-" === vim-instant-markdown
-source $HOME/.config/nvim/plug-configs/vim-instant-markdown.vim
 " === vim-markdown
 source $HOME/.config/nvim/plug-configs/vim-markdown.vim
 " === asyncrun
@@ -122,3 +120,11 @@ source $HOME/.config/nvim/plug-configs/terraform.vim
 
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/colorscheme.vim
+
+
+" ==========================================
+" === Special Settings (Order Intensive) ===
+" ==========================================
+
+" === vim-instant-markdown
+source $HOME/.config/nvim/plug-configs/vim-instant-markdown.vim
