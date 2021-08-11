@@ -93,6 +93,8 @@ source $HOME/.config/nvim/plug-configs/vim-go.vim
 let g:vim_jsx_pretty_colorful_config = 1
 " === xtabline
 source $HOME/.config/nvim/plug-configs/xtabline.vim
+" === asyncrun
+source $HOME/.config/nvim/plug-configs/asyncrun.vim
 " === COC
 source $HOME/.config/nvim/plug-configs/coc.vim
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -108,10 +110,9 @@ source $HOME/.config/nvim/plug-configs/NERD-Commenter.vim
 source $HOME/.config/nvim/plug-configs/leaderF.vim
 " === vim-markdown
 source $HOME/.config/nvim/plug-configs/vim-markdown.vim
-" === asyncrun
-source $HOME/.config/nvim/plug-configs/asyncrun.vim
 " === fakeclip
 " source $HOME/.config/nvim/plug-configs/fakeclip.vim
+" === Terraform
 source $HOME/.config/nvim/plug-configs/terraform.vim
 
 " ========================
