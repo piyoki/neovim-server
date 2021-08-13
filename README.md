@@ -88,7 +88,7 @@ docker run -d \
   -v ~/workspace:/workspace \
   -v /appdata/nvim-server:/config \
   -e UID=$UID \
-  -e GId=$GID \
+  -e GID=$GID \
   -e TZ=Asia/Shanghai \
   -e USER=<USER> \
   -e SECRET=<PASSWORD> \
