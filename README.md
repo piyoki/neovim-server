@@ -24,6 +24,10 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ![screenshot](https://github.com/yqlbu/neovim-server/raw/master/demo.gif)
 
+## 🚨 Notifications
+
+This is project is deprecated, and no longer under maintenance. However, contributions are still welcome.
+
 ## ✨ Features
 
 - Portable and light-weight
