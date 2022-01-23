@@ -26,7 +26,7 @@ You can use it to implement an IDE-like web-based terminal text editor.
 
 ## 🚨 Notifications
 
-This is project is deprecated, and no longer under maintenance. However, contributions are still welcome.
+This is project is **deprecated**, and no longer under maintenance. However, contributions are still welcome.
 
 ## ✨ Features
 
